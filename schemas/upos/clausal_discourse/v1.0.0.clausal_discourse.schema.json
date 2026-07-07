@@ -1,0 +1,85 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://OpenUniLex.org/schemas/upos/clausal_discourse/v1.0.0.clausal_discourse.schema.json",
+  "title": "Clausal Discourse Structural Schema",
+  "description": "Validates clausal-level particles, auxiliaries, copulas, and discourse expressions (PART, AUX, INTJ) modulating tense, aspect, mood, modality, polarity, or interactional stance.",
+  "type": "object",
+  "properties": {
+    "pos_payload": {
+      "type": "object",
+      "description": "The part-of-speech behavioral payload defining clausal and discourse token properties.",
+      "properties": {
+        "functional_scope": {
+          "type": "string",
+          "enum": [
+            "MODAL",
+            "ASPECTUAL",
+            "TENSE_MARKING",
+            "POLARITY",
+            "COPULA",
+            "ASSERTION",
+            "INTERROGATIVE",
+            "DISCOURSE_EMOTIVE"
+          ],
+          "description": "The specific semantic or clausal category modified by this token."
+        },
+        "token_class": {
+          "type": "string",
+          "enum": [
+            "particle",
+            "auxiliary",
+            "interjection"
+          ],
+          "description": "The general grammatical class corresponding to the token's core UPOS."
+        },
+        "attachment_target": {
+          "type": "string",
+          "enum": [
+            "PREVERBAL",
+            "POSTVERBAL",
+            "SENTENCE_FINAL",
+            "POST_PREDICATIVE",
+            "NOUN_BOUND",
+            "ISOLATED"
+          ],
+          "description": "Linear placement constraint of the token relative to its clausal or lexical host expression."
+        },
+        "ud_deprel_default": {
+          "type": "string",
+          "enum": [
+            "mark",
+            "aux",
+            "cc",
+            "advmod",
+            "cop",
+            "discourse"
+          ],
+          "description": "Default Universal Dependencies relation expected for this token."
+        },
+        "surface_forms": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string"
+          },
+          "description": "All standard phonological/orthographic forms or clitic variations recognized for this item."
+        },
+        "structural_constraints": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Explicit parsing instructions, constraints on preceding/following boundary elements, or interaction rules."
+        }
+      },
+      "required": [
+        "functional_scope",
+        "token_class",
+        "attachment_target",
+        "ud_deprel_default",
+        "surface_forms"
+      ],
+      "additionalProperties": false
+    }
+  }
+}

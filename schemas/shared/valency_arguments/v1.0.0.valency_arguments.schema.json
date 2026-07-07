@@ -45,6 +45,7 @@
               "ARGUMENT",
               "MODIFIER",
               "MARKER",
+              "COPULA",
               "ENVIRONMENTAL_EXPONENT"
             ]
           },

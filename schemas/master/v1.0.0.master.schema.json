@@ -222,7 +222,7 @@
         }
       },
       "then": {
-        "$ref": "https://OpenUniLex.org/schemas/upos/grammar_glue/v1.0.0.grammar_glue.schema.json"
+        "$ref": "https://OpenUniLex.org/schemas/upos/clausal_discourse/v1.0.0.clausal_discourse.schema.json"
       }
     },
     {

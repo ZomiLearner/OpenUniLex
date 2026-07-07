@@ -38,6 +38,7 @@
 		"discourse",
 		"dep",
 		"punct",
+		"cop",
 		"nsubj:pass",
 		"csubj:pass",
 		"obl:tmod",

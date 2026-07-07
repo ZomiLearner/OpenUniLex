@@ -69,8 +69,13 @@
     }
   ],
   "pos_payload": {
+    "functional_scope": "POLARITY",
+    "token_class": "particle",
     "attachment_target": "POSTVERBAL",
-    "ud_deprel_default": "advmod"
+    "ud_deprel_default": "advmod",
+    "surface_forms": [
+      "in"
+    ]
   },
   "metadata": {
     "source": "Zomi NLP Core Treebank Projects",
