@@ -1,13 +1,15 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://OpenUniLex.org/schemas/upos/modifier/v1.0.0.modifier.schema.json",
+  "title": "Modifier Phrase Domain Schema",
+  "description": "Validates adjectival and adverbial expressions (ADJ, ADV) serving as structural modifiers within nominal, verbal, or clausal projections.",
   "type": "object",
   "properties": {
     "pos_payload": {
       "type": "object",
-      "description": "Payload for ADJ and ADV parts of speech. Includes morphosyntactic type and modification scope.",
+      "description": "Behavioral payload for tokens modifying phrasal properties or event characteristics.",
       "properties": {
-        "morph_type": {
+        "modifier_type": {
           "type": "string",
           "description": "Morphological subtype of the modifier.",
           "enum": [
@@ -28,54 +30,101 @@
         "modification_scope": {
           "type": "string",
           "enum": [
-            "NOUN_PHRASE",
-            "VERB_PHRASE",
-            "CLAUSAL",
             "NOMINAL",
-            "VERBAL"
-          ]
+            "VERBAL",
+            "CLAUSAL",
+            "ADJECTIVAL_ADVERBIAL"
+          ],
+          "description": "The abstract phrasal or clausal projection target of this modifier."
+        },
+        "functional_scope": {
+          "type": "string",
+          "enum": [
+            "NONE",
+            "ASPECTUAL",
+            "MODAL",
+            "EVIDENTIAL"
+          ],
+          "description": "Specifies secondary grammatical, temporal, or logical domains targeted by the modifier beyond basic phrasal description."
+        },
+        "token_class": {
+          "type": "string",
+          "enum": [
+            "adjective",
+            "adverb"
+          ],
+          "description": "The lexical category corresponding directly to the modifier UPOS."
+        },
+        "attachment_target": {
+          "type": "string",
+          "enum": [
+            "PREVERBAL",
+            "POSTVERBAL",
+            "PRENOMINAL",
+            "POSTNOMINAL",
+            "SENTENCE_FINAL",
+            "ISOLATED"
+          ],
+          "description": "Linear placement constraint of the modifier relative to its structural host."
+        },
+        "ud_deprel_default": {
+          "type": "string",
+          "enum": [
+            "amod",
+            "advmod",
+            "nmod"
+          ],
+          "description": "Default Universal Dependencies syntactic relation for modifiers."
+        },
+        "surface_forms": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string"
+          },
+          "description": "Standard orthographic realizations of this modifier entry."
+        },
+        "structural_constraints": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Explicit instructions regarding allomorphy, stem constraints, or word order syntax rules."
         },
         "internal_structure": {
           "type": "object",
-          "description": "Morphological decomposition of the modifier, including reduplication or derivational structure.",
+          "description": "Morphological decomposition of the modifier, tracking its base derivation or reduplication structure.",
           "properties": {
             "root_lemma": {
-              "type": "string"
+              "type": "string",
+              "description": "The base predicate or noun lemma from which this modifier is derived."
             },
             "reduplication_type": {
               "type": "string",
               "enum": [
+                "NONE",
                 "TOTAL",
                 "PARTIAL"
-              ]
+              ],
+              "description": "Type of morphological reduplication applied to the root."
             },
             "morphotactics": {
-              "type": "string"
+              "type": "string",
+              "description": "A structural formula describing the affixation pattern (e.g., 'ROOT + -takin')."
             }
           },
           "required": [
             "root_lemma"
           ],
           "additionalProperties": false
-        },
-        "feats": {
-          "type": "object",
-          "description": "UD-style morphological features associated with the modifier.",
-          "additionalProperties": {
-            "type": "string"
-          }
-        },
-        "examples": {
-          "type": "array",
-          "items": {
-            "$ref": "https://OpenUniLex.org/schemas/shared/igt_example/v1.0.0.igt_example.schema.json"
-          }
         }
       },
       "required": [
-        "morph_type",
         "modification_scope",
-        "examples"
+        "token_class",
+        "attachment_target",
+        "ud_deprel_default",
+        "surface_forms"
       ],
       "additionalProperties": false
     }

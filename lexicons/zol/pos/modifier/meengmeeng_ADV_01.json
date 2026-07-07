@@ -17,37 +17,87 @@
 			}
 		}
 	},
+	"senses": [
+		{
+			"sense_id": "meengmeeng_ADV_01_SENSE_01_MANNER",
+			"gloss": "quickly",
+			"semantic_domain": "8.3.1.2.1",
+			"valency_frame": {
+				"valency_type": "clausal_modifier",
+				"arguments": [
+					{
+						"role": "MANNER_MODIFIER",
+						"deprel": "advmod",
+						"description": "Modifies a dynamic action predicate via total root reduplication to define high-speed or accelerated event execution.",
+						"is_obligatory": false
+					}
+				]
+			},
+			"contextual_requirements": {
+				"preceding_element": {
+					"upos": "VERB",
+					"note": "Follows the head verb phrase it modifies in imperative or dynamic active clauses."
+				}
+			},
+			"examples": [
+				{
+					"surface_text": "Pai meengmeeng in.",
+					"english_translation": "Go quickly.",
+					"gloss_alignment": [
+						{
+							"token": "Pai",
+							"morphemes": [
+								"pai"
+							],
+							"gloss": "Go",
+							"upos_target": "VERB"
+						},
+						{
+							"token": "meengmeeng",
+							"morphemes": [
+								"meeng",
+								"meeng"
+							],
+							"gloss": "quickly",
+							"upos_target": "ADV"
+						},
+						{
+							"token": "in",
+							"morphemes": [
+								"in"
+							],
+							"gloss": "IMP",
+							"upos_target": "PART"
+						}
+					],
+					"external_links": {
+						"ili_id": "i26917",
+						"verbnet_class": ""
+					}
+				}
+			]
+		}
+	],
 	"pos_payload": {
+		"token_class": "adverb",
+		"modifier_type": "REDUPLICATED",
 		"modification_scope": "VERBAL",
-		"morph_type": "REDUPLICATED",
+		"attachment_target": "POSTVERBAL",
+		"functional_scope": "NONE",
+		"ud_deprel_default": "advmod",
+		"surface_forms": [
+			"meengmeeng"
+		],
+		"structural_constraints": [
+			"LINEAR_ADJACENCY: MUST_IMMEDIATELY_FOLLOW_VERB_STEM",
+			"MORPHOSYNTAX: REQUIRES_IMP_PARTICLE_IN_DIRECT_COMMANDS",
+			"MORPHOLOGY: BASE_ROOT_IMMUNE_TO_STEM_ALTERNATION"
+		],
 		"internal_structure": {
 			"root_lemma": "meeng",
 			"reduplication_type": "TOTAL",
 			"morphotactics": "BASE_ROOT + REDUPLICANT"
-		},
-		"examples": [
-			{
-				"surface_text": "Pai meengmeeng in.",
-				"english_translation": "Go quickly.",
-				"gloss_alignment": [
-					{
-						"token": "Pai",
-						"gloss": "Go",
-						"upos_target": "VERB"
-					},
-					{
-						"token": "meengmeeng",
-						"gloss": "quickly",
-						"upos_target": "ADV"
-					},
-					{
-						"token": "in",
-						"gloss": "IMP",
-						"upos_target": "PART"
-					}
-				]
-			}
-		]
+		}
 	},
 	"metadata": {
 		"source": "zol lexicon",
@@ -56,7 +106,7 @@
 		],
 		"license": "CC-BY-SA-4.0",
 		"created_by": "linguist_team",
-		"created_at": "2026-06-25",
+		"created_at": "2026-07-08T04:25:00Z",
 		"status": "VALIDATED",
 		"ud_compliant": true,
 		"version": 1

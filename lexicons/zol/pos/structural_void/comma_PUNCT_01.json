@@ -8,6 +8,31 @@
   "feats": {
     "universal": {}
   },
+  "senses": [
+    {
+      "sense_id": "comma_PUNCT_01_SENSE_01_DELIMITER",
+      "gloss": "comma",
+      "semantic_domain": "3.4.1",
+      "valency_frame": {
+        "valency_type": "structural_delimiter",
+        "arguments": [
+          {
+            "role": "LEFT_CONJUNCT_BOUNDARY",
+            "deprel": "punct",
+            "description": "Marks the linear boundary or right edge of a coordinated phrase, list item, or dependent clausal projection.",
+            "is_obligatory": false
+          }
+        ]
+      },
+      "contextual_requirements": {
+        "preceding_element": {
+          "upos": "ANY",
+          "note": "Attaches directly to the immediately preceding token without typographic whitespace."
+        }
+      },
+      "examples": []
+    }
+  ],
   "pos_payload": {
     "token_class": "punctuation",
     "surface_forms": [
@@ -21,7 +46,7 @@
     ],
     "license": "CC-BY-SA-4.0",
     "created_by": "pipeline",
-    "created_at": "2026-07-05",
+    "created_at": "2026-07-08T04:47:00Z",
     "status": "VALIDATED",
     "ud_compliant": true,
     "version": 1

@@ -17,6 +17,7 @@
         "case_marking",
         "coordination",
         "subordination",
+        "structural_delimiter",
         "unspecified"
       ]
     },
@@ -45,10 +46,13 @@
               "TIME",
               "ARGUMENT",
               "MODIFIER",
+              "MANNER_MODIFIER",
+              "QUALITY_MODIFIER",
               "QUANTIFIER",
               "MARKER",
               "COPULA",
               "ORDER_SPECIFIER",
+              "LEFT_CONJUNCT_BOUNDARY",
               "ENVIRONMENTAL_EXPONENT"
             ]
           },
