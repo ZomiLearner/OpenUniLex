@@ -10,7 +10,8 @@
         "intransitive",
         "ditransitive",
         "ambient",
-        "stative"
+        "stative",
+        "unspecified"
       ]
     },
     "arguments": {
@@ -35,7 +36,8 @@
               "LOCATION_DESTINATION",
               "SOURCE_LOCATION",
               "DESTINATION_LOCATION",
-              "TIME"
+              "TIME",
+              "ENVIRONMENTAL_EXPONENT"
             ]
           },
           "deprel": {
