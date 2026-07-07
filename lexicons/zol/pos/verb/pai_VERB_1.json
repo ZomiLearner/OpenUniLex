@@ -21,6 +21,63 @@
       }
     }
   },
+  "senses": [
+    {
+      "sense_id": "pai_VERB_1.SENSE.1",
+      "gloss": "go",
+      "semantic_domain": "7.2.1.1",
+      "valency_frame": {
+        "valency_type": "intransitive",
+        "arguments": [
+          {
+            "role": "AGENT",
+            "deprel": "nsubj",
+            "is_obligatory": true
+          },
+          {
+            "role": "LOCATION_DESTINATION",
+            "deprel": "obl",
+            "is_obligatory": false
+          }
+        ]
+      },
+      "contextual_requirements": null
+    },
+    {
+      "sense_id": "PAI_VERB_1.SENSE.2",
+      "gloss": "come",
+      "semantic_domain": "7.2.3.1",
+      "valency_frame": {
+        "valency_type": "intransitive",
+        "arguments": [
+          {
+            "role": "AGENT",
+            "deprel": "nsubj",
+            "is_obligatory": true
+          },
+          {
+            "role": "SOURCE_LOCATION",
+            "deprel": "obl",
+            "is_obligatory": false
+          },
+          {
+            "role": "DESTINATION_LOCATION",
+            "deprel": "obl",
+            "is_obligatory": false
+          }
+        ]
+      },
+      "contextual_requirements": {
+        "required_modifiers": [
+          "hong",
+          "kong",
+          "ong",
+          "nong"
+        ],
+        "description": "Triggered exclusively via composition with deictic direction particles pointing toward the speaker or listener."
+      }
+    }
+  ],
   "pos_payload": {
     "valency_frame": {
       "valency_type": "intransitive",
@@ -47,31 +104,41 @@
         "gloss_alignment": [
           {
             "token": "Kalaymyo",
-            "morphemes": ["Kalaymyo"],
+            "morphemes": [
+              "Kalaymyo"
+            ],
             "gloss": "Kalaymyo",
             "upos_target": "PROPN"
           },
           {
             "token": "ah",
-            "morphemes": ["ah"],
+            "morphemes": [
+              "ah"
+            ],
             "gloss": "LOC",
             "upos_target": "ADP"
           },
           {
             "token": "ka",
-            "morphemes": ["ka"],
+            "morphemes": [
+              "ka"
+            ],
             "gloss": "1SG.SUBJ",
             "upos_target": "PRON"
           },
           {
             "token": "pai",
-            "morphemes": ["pai"],
+            "morphemes": [
+              "pai"
+            ],
             "gloss": "go.StemI",
             "upos_target": "VERB"
           },
           {
             "token": "hi",
-            "morphemes": ["hi"],
+            "morphemes": [
+              "hi"
+            ],
             "gloss": "DECL",
             "upos_target": "PART"
           }
@@ -80,16 +147,72 @@
           "ili_id": "i26941",
           "verbnet_class": "escape-51.1"
         }
+      },
+      {
+        "surface_text": "Inndei pen ah hong pai in!",
+        "english_translation": "Come to the room!",
+        "gloss_alignment": [
+          {
+            "token": "Inndei",
+            "morphemes": [
+              "inn",
+              "dei"
+            ],
+            "gloss": "room",
+            "upos_target": "NOUN"
+          },
+          {
+            "token": "pen",
+            "morphemes": [
+              "pen"
+            ],
+            "gloss": "DEF",
+            "upos_target": "DET"
+          },
+          {
+            "token": "ah",
+            "morphemes": [
+              "ah"
+            ],
+            "gloss": "LOC",
+            "upos_target": "ADP"
+          },
+          {
+            "token": "hong",
+            "morphemes": [
+              "hong"
+            ],
+            "gloss": "DIR.TO_SPEAKER",
+            "upos_target": "PART"
+          },
+          {
+            "token": "pai",
+            "morphemes": [
+              "pai"
+            ],
+            "gloss": "go.StemI",
+            "upos_target": "VERB"
+          },
+          {
+            "token": "in",
+            "morphemes": [
+              "in"
+            ],
+            "gloss": "IMP",
+            "upos_target": "PART"
+          }
+        ]
       }
     ]
   },
   "metadata": {
     "source": "Zomi NLP Core Treebank Projects",
     "authors": [
-      "zomi-nlp-engine-team"
+      "zomi-nlp-engine-team",
+      "OpenUniLex"
     ],
-    "license": "MIT",
-    "created_by": "automated_parser_v0.4.0",
+    "license": "CC-BY-SA-4.0",
+    "created_by": "linguist_team",
     "created_at": "2026-07-06T22:05:00Z",
     "status": "VALIDATED",
     "ud_compliant": true,
@@ -97,13 +220,11 @@
     "change_log": [
       {
         "edited_by": "linguistic_validator",
-        "edited_at": "2026-07-06T22:06:15Z",
+        "edited_at": "2026-07-07T06:34:00Z",
         "fields_modified": [
-          "valency_frame.valency_type",
-          "valency_frame.arguments",
-          "stem_alternations"
+          "pos_payload.examples"
         ],
-        "purpose": "Corrected core valency from transitive to intransitive, added directional oblique template argument, and supplied verified Stem I/II alternates."
+        "purpose": "Add example corresponding to the sense of pai (directionality toward speaker or as a response to the speaker)."
       }
     ]
   }

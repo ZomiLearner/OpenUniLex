@@ -85,7 +85,7 @@
           "sense_id",
           "gloss",
           "semantic_domain",
-          "valency"
+          "valency_frame"
         ],
         "properties": {
           "sense_id": {
@@ -97,8 +97,8 @@
           "semantic_domain": {
             "type": "string"
           },
-          "valency": {
-            "$ref": "valency.schema.json"
+          "valency_frame": {
+            "$ref": "https://OpenUniLex.org/schemas/shared/valency_arguments/v1.0.0.valency_arguments.schema.json"
           },
           "contextual_requirements": {
             "type": [
