@@ -1,15 +1,32 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
 	"$id": "https://OpenUniLex.org/schemas/upos/noun/v1.0.0.noun.schema.json",
+	"title": "Noun Phrase Domain Schema",
+	"description": "Validates nominal heads (NOUN, PROPN, PRON), tracking lexical classes, animacy properties, countability, and noun-phrase level structural behavior.",
 	"properties": {
 		"pos_payload": {
 			"type": "object",
+			"title": "Nominal Part of Speech Payload",
+			"description": "Behavioral payload for tokens serving as noun-phrase structural heads or core nominal arguments.",
 			"properties": {
+				"token_class": {
+					"type": "string",
+					"title": "Noun Token Subtype",
+					"description": "The macro-functional lexical subclass of the nominal entry.",
+					"enum": [
+						"common_noun",
+						"proper_noun",
+						"pronoun",
+						"classifier"
+					]
+				},
 				"derivation": {
 					"$ref": "https://OpenUniLex.org/schemas/shared/derivation/v1.0.0.derivation.schema.json"
 				},
 				"noun_class": {
 					"type": "string",
+					"title": "Noun Semantic Class",
+					"description": "Inherent semantic category of the noun entity, useful for animacy alignment or selectional restrictions.",
 					"enum": [
 						"ANIMATE",
 						"INANIMATE",
@@ -19,15 +36,61 @@
 				},
 				"countability": {
 					"type": "string",
+					"title": "Countability Profile",
+					"description": "Specifies whether the noun can directly interact with numeral expressions or requires generic/specific classifiers.",
 					"enum": [
 						"COUNTABLE",
 						"MASS"
 					]
+				},
+				"surface_forms": {
+					"type": "array",
+					"title": "Orthographic Surface Forms",
+					"description": "An array containing all standardized surface level orthographic representations of this nominal entry.",
+					"uniqueItems": true,
+					"items": {
+						"type": "string"
+					}
+				},
+				"structural_constraints": {
+					"type": "array",
+					"title": "Syntactic & Morphosyntactic Constraints",
+					"description": "Machine-readable declarations controlling possessive clitic serialization, case alignment, or classifier dependencies.",
+					"items": {
+						"type": "string"
+					}
+				},
+				"internal_structure": {
+					"type": "object",
+					"title": "Internal Morphological Structure",
+					"description": "Decomposes the noun lemma to track nominalization affixes, root compounds, or derivation patterns using the shared derivation schema.",
+					"properties": {
+						"derivation_details": {
+							"$ref": "https://OpenUniLex.org/schemas/shared/derivation/v1.0.0.derivation.schema.json",
+							"description": "Shared schema mapping for the underlying base lemma, category, and derivational process type."
+						},
+						"is_compound": {
+							"type": "boolean",
+							"title": "Compound Flag",
+							"description": "True if the nominal base involves multiple independent lexical roots."
+						},
+						"morphotactics": {
+							"type": "string",
+							"title": "Morphotactic Formula",
+							"description": "Formalized structural expression displaying the nominal composition pattern (e.g., 'STEM_II + -na')."
+						}
+					},
+					"required": [
+						"derivation_details"
+					]
 				}
 			},
 			"required": [
+				"token_class",
 				"noun_class",
-				"countability"
+				"countability",
+				"surface_forms",
+				"internal_structure"
 			],
 			"additionalProperties": false
 		}

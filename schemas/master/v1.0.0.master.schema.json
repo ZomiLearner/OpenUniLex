@@ -129,6 +129,7 @@
     "morph_type",
     "metadata",
     "feats",
+    "senses",
     "pos_payload"
   ],
   "allOf": [

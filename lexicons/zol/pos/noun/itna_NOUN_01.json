@@ -65,14 +65,22 @@
     }
   ],
   "pos_payload": {
-    "derivation": {
-      "base_lemma": "it",
-      "base_upos": "VERB",
-      "process": "NOMINALIZATION",
-      "morpheme": "-na"
-    },
+    "token_class": "common_noun",
     "noun_class": "ABSTRACT",
-    "countability": "MASS"
+    "countability": "MASS",
+    "surface_forms": [
+      "itna"
+    ],
+    "internal_structure": {
+      "derivation_details": {
+        "base_lemma": "it",
+        "base_upos": "VERB",
+        "process": "NOMINALIZATION",
+        "morpheme": "-na"
+      },
+      "is_compound": false,
+      "morphotactics": "STEM_I + -na"
+    }
   },
   "metadata": {
     "source": "zol lexicon",
