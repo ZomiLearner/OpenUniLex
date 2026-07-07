@@ -1,0 +1,168 @@
+{
+	"$schema": "https://OpenUniLex.org/schemas/language_specific/zol/v1.0.0.zol_features.schema.json",
+	"lemma": "pai",
+	"upos": "VERB",
+	"dialect_tag": "UNIVERSAL",
+	"gloss": "come",
+	"semantic_domain": "7.2.3.1_COME",
+	"morph_type": "INFLECTIONAL",
+	"feats": {
+		"universal": {
+			"Aspect": "Imp",
+			"Mood": "Ind",
+			"Voice": "Act",
+			"VerbForm": "Fin",
+			"Polarity": "Pos"
+		},
+		"language_specific": {
+			"zol": {
+				"Directional": "Toward",
+				"Evidential": "Direct",
+				"SerialVerb": "Sequential"
+			}
+		}
+	},
+	"pos_payload": {
+		"valency_frame": {
+			"valency_type": "intransitive",
+			"arguments": [
+				{
+					"role": "AGENT",
+					"deprel": "nsubj",
+					"is_obligatory": true
+				},
+				{
+					"role": "SOURCE_LOCATION",
+					"deprel": "obl",
+					"is_obligatory": false
+				},
+				{
+					"role": "LOCATION_DESTINATION",
+					"deprel": "obl",
+					"is_obligatory": false
+				}
+			]
+		},
+		"stem_alternations": {
+			"stem_i": "pai"
+		},
+		"examples": [
+			{
+				"surface_text": "Inndei pen ah hong pai in!",
+				"english_translation": "Come to the room!",
+				"gloss_alignment": [
+					{
+						"token": "Inndei",
+						"morphemes": [
+							"inn",
+							"dei"
+						],
+						"gloss": "room",
+						"upos_target": "NOUN"
+					},
+					{
+						"token": "pen",
+						"morphemes": [
+							"pen"
+						],
+						"gloss": "DEF",
+						"upos_target": "DET"
+					},
+					{
+						"token": "ah",
+						"morphemes": [
+							"ah"
+						],
+						"gloss": "LOC",
+						"upos_target": "ADP"
+					},
+					{
+						"token": "hong",
+						"morphemes": [
+							"hong"
+						],
+						"gloss": "DIR.TO_SPEAKER",
+						"upos_target": "PART"
+					},
+					{
+						"token": "pai",
+						"morphemes": [
+							"pai"
+						],
+						"gloss": "come.StemI",
+						"upos_target": "VERB"
+					},
+					{
+						"token": "in",
+						"morphemes": [
+							"in"
+						],
+						"gloss": "IMP",
+						"upos_target": "PART"
+					}
+				],
+				"external_links": {
+					"ili_id": "",
+					"verbnet_class": "come-51.1"
+				}
+			},
+			{
+				"surface_text": "Kong pai hi.",
+				"english_translation": "I am coming (to you).",
+				"gloss_alignment": [
+					{
+						"token": "Kong",
+						"morphemes": ["ka", "hong"],
+						"gloss": "1SG.SUBJ>2.OBJ",
+						"upos_target": "PRON+PART"
+					},
+					{
+						"token": "pai",
+						"morphemes": [
+							"pai"
+						],
+						"gloss": "go.StemI",
+						"upos_target": "VERB"
+					},
+					{
+						"token": "hi",
+						"morphemes": [
+							"hi"
+						],
+						"gloss": "DECL",
+						"upos_target": "PART"
+					}
+				],
+				"external_links": {
+					"ili_id": "",
+					"verbnet_class": "come-51.1"
+				}
+			}
+		]
+	},
+	"metadata": {
+		"source": "zol lexicon",
+		"authors": [
+			"OpenUniLex"
+		],
+		"license": "CC-BY-SA-4.0",
+		"created_by": "linguist_team",
+		"created_at": "2026-07-07",
+		"status": "VALIDATED",
+		"ud_compliant": true,
+		"version": 1,
+		"change_log": [
+			{
+				"edited_by": "linguist_validator",
+				"edited_at": "2026-07-07",
+				"fields_modified": [
+					"semantic_domain",
+					"gloss",
+					"valency_frame.arguments",
+					"examples"
+				],
+				"purpose": "Added separate entry for 'come' sense of pai (directionality toward speaker or as a response to the speaker), added examples."
+			}
+		]
+	}
+}

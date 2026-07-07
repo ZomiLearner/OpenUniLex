@@ -1,0 +1,29 @@
+{
+  "$schema": "https://OpenUniLex.org/schemas/language_specific/zol/v1.0.0.zol_features.schema.json",
+  "lemma": ",",
+  "upos": "PUNCT",
+  "dialect_tag": "UNIVERSAL",
+  "semantic_domain": "3.4.1_PUNCTUATION_DELIMITATION",
+  "morph_type": "NONE",
+  "feats": {
+    "universal": {}
+  },
+  "pos_payload": {
+    "token_class": "punctuation",
+    "surface_forms": [
+      ","
+    ]
+  },
+  "metadata": {
+    "source": "zol lexicon",
+    "authors": [
+      "OpenUniLex"
+    ],
+    "license": "CC-BY-SA-4.0",
+    "created_by": "pipeline",
+    "created_at": "2026-07-05",
+    "status": "VALIDATED",
+    "ud_compliant": true,
+    "version": 1
+  }
+}

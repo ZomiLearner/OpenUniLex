@@ -1,0 +1,64 @@
+{
+	"$schema": "https://OpenUniLex.org/schemas/language_specific/zol/v1.0.0.zol_features.schema.json",
+	"lemma": "meengmeeng",
+	"upos": "ADV",
+	"dialect_tag": "UNIVERSAL",
+	"gloss": "quickly",
+	"semantic_domain": "8.3.1.2.1_QUICKLY",
+	"morph_type": "COMPOUND",
+	"xpos": "ADV",
+	"feats": {
+		"universal": {
+			"Degree": "Sup"
+		},
+		"language_specific": {
+			"zol": {
+				"Reduplication": "Intensifying"
+			}
+		}
+	},
+	"pos_payload": {
+		"modification_scope": "VERBAL",
+		"morph_type": "REDUPLICATED",
+		"internal_structure": {
+			"root_lemma": "meeng",
+			"reduplication_type": "TOTAL",
+			"morphotactics": "BASE_ROOT + REDUPLICANT"
+		},
+		"examples": [
+			{
+				"surface_text": "Pai meengmeeng in.",
+				"english_translation": "Go quickly.",
+				"gloss_alignment": [
+					{
+						"token": "Pai",
+						"gloss": "Go",
+						"upos_target": "VERB"
+					},
+					{
+						"token": "meengmeeng",
+						"gloss": "quickly",
+						"upos_target": "ADV"
+					},
+					{
+						"token": "in",
+						"gloss": "IMP",
+						"upos_target": "PART"
+					}
+				]
+			}
+		]
+	},
+	"metadata": {
+		"source": "zol lexicon",
+		"authors": [
+			"OpenUniLex"
+		],
+		"license": "CC-BY-SA-4.0",
+		"created_by": "linguist_team",
+		"created_at": "2026-06-25",
+		"status": "VALIDATED",
+		"ud_compliant": true,
+		"version": 1
+	}
+}

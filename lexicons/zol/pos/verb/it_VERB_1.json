@@ -1,0 +1,86 @@
+{
+  "$schema": "https://OpenUniLex.org/schemas/language_specific/zol/v1.0.0.zol_features.schema.json",
+  "lemma": "it",
+  "upos": "VERB",
+  "dialect_tag": "UNIVERSAL",
+  "gloss": "love",
+  "semantic_domain": "2.1.2_RECOGNITION_OF_VALUE",
+  "morph_type": "INFLECTIONAL",
+  "feats": {
+    "universal": {
+      "Aspect": "Imp",
+      "Mood": "Ind",
+      "Voice": "Act",
+      "VerbForm": "Fin",
+      "Polarity": "Pos"
+    },
+    "language_specific": {
+      "zol": {
+        "Evidential": "Direct"
+      }
+    }
+  },
+  "pos_payload": {
+    "valency_frame": {
+      "valency_type": "transitive",
+      "arguments": [
+        {
+          "role": "AGENT",
+          "deprel": "nsubj",
+          "is_obligatory": true
+        },
+        {
+          "role": "PATIENT",
+          "deprel": "obj",
+          "is_obligatory": true
+        }
+      ]
+    },
+    "stem_alternations": {
+      "stem_i": "it",
+      "stem_ii": "it"
+    },
+    "examples": [
+      {
+        "surface_text": "Kong it hi.",
+        "english_translation": "I love you.",
+        "gloss_alignment": [
+          {
+            "token": "Kong",
+            "morphemes": ["kong"],
+            "gloss": "1SG>2SG",
+            "upos_target": "PRON"
+          },
+          {
+            "token": "it",
+            "morphemes": ["it"],
+            "gloss": "love",
+            "upos_target": "VERB"
+          },
+          {
+            "token": "hi",
+            "morphemes": ["hi"],
+            "gloss": "ASSERT",
+            "upos_target": "PART"
+          }
+        ],
+        "external_links": {
+          "ili_id": "",
+          "verbnet_class": "love-31.1"
+        }
+      }
+    ]
+  },
+  "metadata": {
+    "source": "zol lexicon",
+    "authors": [
+      "OpenUniLex"
+    ],
+    "license": "CC-BY-SA-4.0",
+    "created_by": "linguist_team",
+    "created_at": "2026-06-12",
+    "status": "VALIDATED",
+    "ud_compliant": true,
+    "version": 1
+  }
+}

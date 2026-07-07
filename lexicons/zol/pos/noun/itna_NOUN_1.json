@@ -1,0 +1,66 @@
+{
+	"$schema": "https://OpenUniLex.org/schemas/language_specific/zol/v1.0.0.zol_features.schema.json",
+	"lemma": "itna",
+	"upos": "NOUN",
+	"dialect_tag": "UNIVERSAL",
+	"gloss": "love",
+	"semantic_domain": "2.1.2_RECOGNITION_OF_VALUE",
+	"morph_type": "DERIVATIONAL",
+	"feats": {
+		"universal": {
+			"Number": "Sing",
+			"Animacy": "Inan",
+			"Case": "Abs"
+		},
+		"language_specific": {
+			"zol": {
+				"NounClass": "Class3"
+			}
+		}
+	},
+	"pos_payload": {
+		"derivation": {
+			"base_lemma": "it",
+			"base_upos": "VERB",
+			"process": "NOMINALIZATION",
+			"morpheme": "-na"
+		},
+		"noun_class": "ABSTRACT",
+		"countability": "MASS",
+		"examples": [
+			{
+				"surface_text": "Itna thupi hi.",
+				"english_translation": "Love is great.",
+				"gloss_alignment": [
+					{
+						"token": "Itna",
+						"gloss": "love",
+						"upos_target": "NOUN"
+					},
+					{
+						"token": "thupi",
+						"gloss": "great",
+						"upos_target": "ADJ"
+					},
+					{
+						"token": "hi",
+						"gloss": "ASSERT",
+						"upos_target": "PART"
+					}
+				]
+			}
+		]
+	},
+	"metadata": {
+		"source": "zol lexicon",
+		"authors": [
+			"OpenUniLex"
+		],
+		"license": "CC-BY-SA-4.0",
+		"created_by": "linguist_team",
+		"created_at": "2026-06-12",
+		"status": "VALIDATED",
+		"ud_compliant": true,
+		"version": 1
+	}
+}

@@ -1,0 +1,67 @@
+{
+	"$schema": "https://OpenUniLex.org/schemas/language_specific/zol/v1.0.0.zol_features.schema.json",
+	"lemma": "amaute",
+	"upos": "PRON",
+	"dialect_tag": "STANDARD",
+	"gloss": "they",
+	"semantic_domain": "1.1.1_PRONOUN",
+	"xpos": "PRON",
+	"morph_type": "INFLECTIONAL",
+	"feats": {
+		"universal": {
+			"Person": "3",
+			"Number": "Plur",
+			"PronType": "Prs",
+			"Gender": "Neut"
+		},
+		"language_specific": {
+			"zol": {
+				"Assoc": "Assoc"
+			}
+		}
+	},
+	"pos_payload": {
+		"token_class": "pronoun",
+		"functional_scope": "PERSONAL",
+		"gender": "unspecified",
+		"case": "default",
+		"surface_forms": [
+			"amaute"
+		],
+		"usage_notes": "Third-person plural pronoun meaning 'they'.",
+		"examples": [
+			{
+				"surface_text": "Amaute pai hi.",
+				"english_translation": "They go.",
+				"gloss_alignment": [
+					{
+						"token": "Amaute",
+						"gloss": "they",
+						"upos_target": "PRON"
+					},
+					{
+						"token": "pai",
+						"gloss": "go",
+						"upos_target": "VERB"
+					},
+					{
+						"token": "hi",
+						"gloss": "ASSERT",
+						"upos_target": "PART"
+					}
+				]
+			}
+		]
+	},
+	"metadata": {
+		"source": "zol lexicon",
+		"authors": [
+			"OpenUniLex"
+		],
+		"license": "CC-BY-SA-4.0",
+		"created_by": "OpenUniLex",
+		"created_at": "2026-07-06",
+		"status": "DRAFT",
+		"version": 1
+	}
+}

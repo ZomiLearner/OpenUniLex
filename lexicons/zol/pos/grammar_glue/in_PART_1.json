@@ -1,0 +1,73 @@
+{
+  "$schema": "https://OpenUniLex.org/schemas/language_specific/zol/v1.0.0.zol_features.schema.json",
+  "lemma": "in",
+  "upos": "PART",
+  "dialect_tag": "UNIVERSAL",
+  "semantic_domain": "3.5.2.2", 
+  "morph_type": "NONE",
+  "xpos": "PART",
+  "feats": {
+    "universal": {
+      "Mood": "Imp",
+      "Polarity": "Pos"
+    },
+    "language_specific": {
+      "zol": {
+        "PolarityParticle": "Aff"
+      }
+    }
+  },
+  "pos_payload": {
+    "attachment_target": "POSTVERBAL",
+    "ud_deprel_default": "advmod",
+    "examples": [
+      {
+        "surface_text": "Pai in!",
+        "english_translation": "Go!",
+        "gloss_alignment": [
+          {
+            "token": "Pai",
+            "morphemes": ["pai"],
+            "gloss": "go.StemI",
+            "upos_target": "VERB"
+          },
+          {
+            "token": "in",
+            "morphemes": ["in"],
+            "gloss": "IMP",
+            "upos_target": "PART"
+          }
+        ],
+        "external_links": {
+          "ili_id": "",
+          "verbnet_class": ""
+        }
+      }
+    ]
+  },
+  "metadata": {
+    "source": "Zomi NLP Core Treebank Projects",
+    "authors": [
+      "zomi-nlp-engine-team"
+    ],
+    "license": "MIT",
+    "created_by": "automated_parser_v0.4.0",
+    "created_at": "2026-07-06T21:38:00Z",
+    "status": "VALIDATED",
+    "ud_compliant": true,
+    "version": 1,
+    "change_log": [
+      {
+        "edited_by": "linguistic_validator",
+        "edited_at": "2026-07-06T21:38:20Z",
+        "fields_modified": [
+          "morph_type",
+          "attachment_target",
+          "ud_deprel_default",
+          "semantic_domain"
+        ],
+        "purpose": "Corrected preverbal-to-postverbal attachment direction and shifted morph_type to match the token's non-inflectional particle status."
+      }
+    ]
+  }
+}
