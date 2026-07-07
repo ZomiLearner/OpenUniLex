@@ -50,15 +50,9 @@
     }
   },
   "upos": {
-    "functional": {
+    "clausal_discourse": {
       "versions": {
-        "1": "schemas/upos/functional/v1.0.0.functional.schema.json"
-      },
-      "default": "1"
-    },
-    "grammar_glue": {
-      "versions": {
-        "1": "schemas/upos/grammar_glue/v1.0.0.grammar_glue.schema.json"
+        "1": "schemas/upos/clausal_discourse/v1.0.0.clausal_discourse.schema.json"
       },
       "default": "1"
     },
@@ -68,9 +62,21 @@
       },
       "default": "1"
     },
+    "nominal_functional": {
+      "versions": {
+        "1": "schemas/upos/nominal_functional/v1.0.0.nominal_functional.schema.json"
+      },
+      "default": "1"
+    },
     "noun": {
       "versions": {
         "1": "schemas/upos/noun/v1.0.0.noun.schema.json"
+      },
+      "default": "1"
+    },
+    "relational_binding": {
+      "versions": {
+        "1": "schemas/upos/relational_binding/v1.0.0.relational_binding.schema.json"
       },
       "default": "1"
     },
