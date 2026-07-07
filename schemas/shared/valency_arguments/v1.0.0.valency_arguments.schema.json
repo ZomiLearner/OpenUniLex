@@ -13,6 +13,7 @@
         "stative",
         "nominal_argument",
         "clausal_modifier",
+        "nominal_modifier",
         "case_marking",
         "coordination",
         "subordination",

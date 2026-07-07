@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://OpenUniLex.org/schemas/upos/functional/v1.0.0.functional.schema.json",
+  "$id": "https://OpenUniLex.org/schemas/upos/nominal_functional/v1.0.0.nominal_functional.schema.json",
   "type": "object",
   "properties": {
     "pos_payload": {
@@ -39,11 +39,12 @@
         "usage_notes": {
           "type": "string"
         },
-        "examples": {
+        "structural_constraints": {
           "type": "array",
           "items": {
-            "$ref": "https://OpenUniLex.org/schemas/shared/igt_example/v1.0.0.igt_example.schema.json"
-          }
+            "type": "string"
+          },
+          "description": ""
         }
       },
       "required": [

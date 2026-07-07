@@ -190,7 +190,7 @@
         }
       },
       "then": {
-        "$ref": "https://OpenUniLex.org/schemas/upos/functional/v1.0.0.functional.schema.json"
+        "$ref": "https://OpenUniLex.org/schemas/upos/nominal_functional/v1.0.0.nominal_functional.schema.json"
       }
     },
     {
