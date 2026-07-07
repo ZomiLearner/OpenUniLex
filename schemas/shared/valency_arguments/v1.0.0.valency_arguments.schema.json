@@ -12,6 +12,7 @@
         "ambient",
         "stative",
         "nominal_argument",
+        "clausal_modifier",
         "unspecified"
       ]
     },
@@ -38,6 +39,8 @@
               "SOURCE_LOCATION",
               "DESTINATION_LOCATION",
               "TIME",
+              "ARGUMENT",
+              "MODIFIER",
               "ENVIRONMENTAL_EXPONENT"
             ]
           },
@@ -46,6 +49,9 @@
           },
           "is_obligatory": {
             "type": "boolean"
+          },
+          "description": {
+            "type": "string"
           }
         },
         "required": [
