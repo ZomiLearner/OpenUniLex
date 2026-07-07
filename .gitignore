@@ -1,0 +1,45 @@
+# OS / Editor junk
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pdb
+*.egg-info/
+*.egg
+.build/
+dist/
+build/
+
+# Virtual environments
+venv/
+.env/
+.env*/
+.venv/
+
+# Tools / cache
+.cache/
+.mypy_cache/
+pytest_cache/
+coverage.xml
+htmlcov/
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.bak
+
+# IDEs
+.vscode/
+.idea/
+
+# Generated artifacts (if any)
+tools/**/output/
+tools/**/generated/

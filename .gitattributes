@@ -1,0 +1,26 @@
+# Normalize line endings
+* text=auto eol=lf
+
+# JSON files should always use LF
+*.json text eol=lf
+
+# Markdown documentation
+*.md text eol=lf
+
+# Make diffs for JSON more readable
+*.json diff=json
+
+# Treat schema files as JSON
+*.schema.json diff=json
+
+# Linguistic lexicon files (JSON)
+lexicons/** text eol=lf diff=json
+
+# Makefile should not get CRLF
+Makefile text eol=lf
+
+# Binary files
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
