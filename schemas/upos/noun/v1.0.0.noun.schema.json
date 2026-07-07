@@ -23,18 +23,11 @@
 						"COUNTABLE",
 						"MASS"
 					]
-				},
-				"examples": {
-					"type": "array",
-					"items": {
-						"$ref": "https://OpenUniLex.org/schemas/shared/igt_example/v1.0.0.igt_example.schema.json"
-					}
 				}
 			},
 			"required": [
 				"noun_class",
-				"countability",
-				"examples"
+				"countability"
 			],
 			"additionalProperties": false
 		}
