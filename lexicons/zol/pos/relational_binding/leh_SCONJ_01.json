@@ -1,0 +1,91 @@
+{
+  "$schema": "https://OpenUniLex.org/schemas/language_specific/zol/v1.0.0.zol_features.schema.json",
+  "lemma": "leh",
+  "upos": "SCONJ",
+  "dialect_tag": "UNIVERSAL",
+  "semantic_domain": "3.5.1.5.2",
+  "morph_type": "NONE",
+  "xpos": "SCONJ",
+  "feats": {
+    "universal": {},
+    "language_specific": {
+      "zol": {}
+    }
+  },
+  "senses": [
+    {
+      "sense_id": "leh_SCONJ_01_SENSE_01_COND",
+      "gloss": "if",
+      "semantic_domain": "3.5.1.5.2",
+      "valency_frame": {
+        "valency_type": "subordination",
+        "arguments": [
+          {
+            "role": "MARKER",
+            "deprel": "mark",
+            "description": "Attaches clause-finally to a subordinate proposition to mark it as a conditional protasis.",
+            "is_obligatory": true
+          }
+        ]
+      },
+      "contextual_requirements": {
+        "preceding_element": {
+          "note": "Requires an preceding inflected or bare clause structure that provides the condition statement."
+        },
+        "following_element": {
+          "note": "Followed by the matrix/apodosis clause specifying the consequence."
+        }
+      },
+      "examples": [
+        {
+          "surface_text": "Amaute in a thukim uh leh ih zom ding uh hi.",
+          "english_translation": "If they agree, we will proceed.",
+          "gloss_alignment": [
+            { "token": "Amaute", "morphemes": ["ama", "-ute"], "gloss": "they", "upos_target": "PRON" },
+            { "token": "in", "morphemes": ["in"], "gloss": "ERG", "upos_target": "ADP" },
+            { "token": "a", "morphemes": ["a"], "gloss": "3.AGR", "upos_target": "PRON" },
+            { "token": "thukim", "morphemes": ["thukim"], "gloss": "agree", "upos_target": "VERB" },
+            { "token": "uh", "morphemes": ["uh"], "gloss": "PL", "upos_target": "PART" },
+            { "token": "leh", "morphemes": ["leh"], "gloss": "if", "upos_target": "SCONJ" },
+            { "token": "ih", "morphemes": ["ih"], "gloss": "1.PL.AGR", "upos_target": "PRON" },
+            { "token": "zom", "morphemes": ["zom"], "gloss": "continue", "upos_target": "VERB" },
+            { "token": "ding", "morphemes": ["ding"], "gloss": "FUT", "upos_target": "AUX" },
+            { "token": "uh", "morphemes": ["uh"], "gloss": "PL", "upos_target": "PART" },
+            { "token": "hi", "morphemes": ["hi"], "gloss": "ASSERT", "upos_target": "PART" }
+          ],
+          "external_links": {
+            "ili_id": "",
+            "verbnet_class": ""
+          }
+        }
+      ]
+    }
+  ],
+  "pos_payload": {
+    "token_class": "subordinating_conjunction",
+    "binding_type": "SUBORDINATING",
+    "attachment_target": "POSTPOSITIONAL",
+    "ud_deprel_default": "mark",
+    "surface_forms": [
+      "leh"
+    ],
+    "structural_constraints": [
+      "Must appear at the absolute right-hand boundary of the subordinate clause.",
+      "Requires explicit pre-verbal subject agreement markers (e.g., singular 'a', plural 'ih') on the host predicate to prevent structural ambiguity with CCONJ 'leh' (and).",
+      "When the clause subject is plural, the plurality particle 'uh' will immediately precede this item.",
+      "Though casually written as bound portmanteaus ('uhleh' for plural, 'aleh' for singular), standard processing tokenizes 'leh' as an independent, isolated postpositional clitic."
+    ]
+  },
+  "metadata": {
+    "source": "Zomi NLP Core Treebank Projects",
+    "authors": [
+      "zomi-nlp-engine-team"
+    ],
+    "license": "MIT",
+    "created_by": "automated_parser_v0.4.0",
+    "created_at": "2026-07-07T23:15:00Z",
+    "status": "VALIDATED",
+    "ud_compliant": true,
+    "version": 1
+  }
+}
