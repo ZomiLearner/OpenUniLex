@@ -20,56 +20,75 @@
       }
     }
   },
-  "pos_payload": {
-    "valency_frame": {
-      "valency_type": "transitive",
-      "arguments": [
+  "senses": [
+    {
+      "sense_id": "it_VERB_01_SENSE_01_LOVE",
+      "gloss": "love",
+      "semantic_domain": "2.1.2",
+      "valency_frame": {
+        "valency_type": "transitive",
+        "arguments": [
+          {
+            "role": "AGENT",
+            "deprel": "nsubj",
+            "description": "The entity experiencing the deep affection, valuation, or love.",
+            "is_obligatory": true
+          },
+          {
+            "role": "PATIENT",
+            "deprel": "obj",
+            "description": "The entity toward whom the affection or value is directed.",
+            "is_obligatory": true
+          }
+        ]
+      },
+      "contextual_requirements": {
+        "preceding_element": {
+          "upos": "PRON",
+          "note": "Often preceded by high-transitivity agreement/agreement-direction markers or person clitics like 'kong' within finite clausal frames."
+        }
+      },
+      "examples": [
         {
-          "role": "AGENT",
-          "deprel": "nsubj",
-          "is_obligatory": true
-        },
-        {
-          "role": "PATIENT",
-          "deprel": "obj",
-          "is_obligatory": true
+          "surface_text": "Kong it hi.",
+          "english_translation": "I love you.",
+          "gloss_alignment": [
+            {
+              "token": "Kong",
+              "morphemes": ["kong"],
+              "gloss": "1SG>2SG",
+              "upos_target": "PRON"
+            },
+            {
+              "token": "it",
+              "morphemes": ["it"],
+              "gloss": "love",
+              "upos_target": "VERB"
+            },
+            {
+              "token": "hi",
+              "morphemes": ["hi"],
+              "gloss": "ASSERT",
+              "upos_target": "PART"
+            }
+          ],
+          "external_links": {
+            "ili_id": "i30973",
+            "verbnet_class": "love-31.1"
+          }
         }
       ]
-    },
+    }
+  ],
+  "pos_payload": {
+    "token_class": "main_verb",
+    "surface_forms": [
+      "it"
+    ],
     "stem_alternations": {
       "stem_i": "it",
       "stem_ii": "it"
-    },
-    "examples": [
-      {
-        "surface_text": "Kong it hi.",
-        "english_translation": "I love you.",
-        "gloss_alignment": [
-          {
-            "token": "Kong",
-            "morphemes": ["kong"],
-            "gloss": "1SG>2SG",
-            "upos_target": "PRON"
-          },
-          {
-            "token": "it",
-            "morphemes": ["it"],
-            "gloss": "love",
-            "upos_target": "VERB"
-          },
-          {
-            "token": "hi",
-            "morphemes": ["hi"],
-            "gloss": "ASSERT",
-            "upos_target": "PART"
-          }
-        ],
-        "external_links": {
-          "ili_id": "",
-          "verbnet_class": "love-31.1"
-        }
-      }
-    ]
+    }
   },
   "metadata": {
     "source": "zol lexicon",

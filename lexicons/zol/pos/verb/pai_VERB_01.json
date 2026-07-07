@@ -192,9 +192,13 @@
     }
   ],
   "pos_payload": {
+    "token_class": "main_verb",
     "stem_alternations": {
       "stem_i": "pai"
-    }
+    },
+    "surface_forms": [
+      "pai"
+    ]
   },
   "metadata": {
     "source": "Zomi NLP Core Treebank Projects",

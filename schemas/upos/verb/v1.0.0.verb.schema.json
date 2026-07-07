@@ -1,29 +1,100 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://OpenUniLex.org/schemas/upos/verb/v1.0.0.verb.schema.json",
+  "title": "Verb Phrase Domain Schema",
+  "description": "Validates the structural properties, argument structures, and morphosyntactic alternations of verbal predicates (VERB, AUX) serving as clausal heads.",
   "type": "object",
   "properties": {
     "pos_payload": {
       "type": "object",
+      "title": "Verbal Part of Speech Payload",
+      "description": "Behavioral and morphological payload specific to verbal heads, tracking token class, stem alternation sets, and structural constraints.",
       "properties": {
+        "token_class": {
+          "type": "string",
+          "title": "Verb Token Subtype",
+          "description": "The specific macro-functional category of the verb within clausal architecture.",
+          "enum": [
+            "main_verb",
+            "auxiliary",
+            "light_verb",
+            "copula"
+          ]
+        },
         "stem_alternations": {
           "type": "object",
+          "title": "Verb Stem Alternation Set",
+          "description": "Tracks the morphological Stem I and Stem II alternations crucial for clausal aspect, mood, transitivity changes, and subordinate selection.",
           "properties": {
             "stem_i": {
-              "type": "string"
+              "type": "string",
+              "title": "Stem I (Baseline / Independent)",
+              "description": "The default underlying verb stem typically utilized in matrix declarative active finite frames."
             },
             "stem_ii": {
-              "type": "string"
+              "type": "string",
+              "title": "Stem II (Dependent / Alternate)",
+              "description": "The morphologically altered stem variant triggered by specific syntactically dependent environments (e.g., nominalizations, relative clauses, specific negation or aspectual frames)."
             }
           },
           "required": [
             "stem_i"
           ],
           "additionalProperties": false
+        },
+        "surface_forms": {
+          "type": "array",
+          "title": "Orthographic Surface Forms",
+          "description": "An array containing all verified, explicit surface level orthographic representations mapped directly from this verb lexicon entry.",
+          "uniqueItems": true,
+          "items": {
+            "type": "string"
+          }
+        },
+        "structural_constraints": {
+          "type": "array",
+          "title": "Syntactic & Morphosyntactic Constraints",
+          "description": "Machine-readable declarations controlling how this verb interacts with clitics, aspectual particles, linear word order, or auxiliary chains.",
+          "items": {
+            "type": "string"
+          }
+        },
+        "internal_structure": {
+          "type": "object",
+          "title": "Internal Morphological Structure",
+          "description": "Decomposes the core lemma to verify its underlying derivational status or compounding setup.",
+          "properties": {
+            "root_lemma": {
+              "type": "string",
+              "title": "Root Lemma Base",
+              "description": "The base historical or un-prefixed predicate lemma from which the surface form is derived."
+            },
+            "derivation_type": {
+              "type": "string",
+              "title": "Derivational Category",
+              "description": "The structural classification describing the morphological composition of the verbal stem.",
+              "enum": [
+                "ROOT",
+                "CAUSATIVE_DERIVED",
+                "COMPOUND_SERIAL",
+                "REDUPLICATED"
+              ]
+            },
+            "morphotactics": {
+              "type": "string",
+              "title": "Morphotactic Formula",
+              "description": "A formalized structural expression displaying the word-formation mechanics (e.g., 'VA- + ROOT' or 'ROOT + -sak')."
+            }
+          },
+          "required": [
+            "root_lemma"
+          ]
         }
       },
       "required": [
-        "stem_alternations"
+        "token_class",
+        "stem_alternations",
+        "surface_forms"
       ]
     }
   }
