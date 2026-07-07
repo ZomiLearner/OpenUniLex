@@ -43,3 +43,8 @@ htmlcov/
 # Generated artifacts (if any)
 tools/**/output/
 tools/**/generated/
+
+# Miscellaneous works/files
+workspace
+Makefilen
+tools/
