@@ -63,6 +63,7 @@
   "pos_payload": {
     "functional_scope": "DEICTIC",
     "token_class": "determiner",
+    "ud_deprel_default": "det",
     "surface_forms": [
       "pen"
     ],

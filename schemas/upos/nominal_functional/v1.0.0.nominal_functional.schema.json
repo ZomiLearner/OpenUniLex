@@ -1,10 +1,13 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://OpenUniLex.org/schemas/upos/nominal_functional/v1.0.0.nominal_functional.schema.json",
+  "title": "Nominal Functional Domain Schema",
+  "description": "Validates closed-class functional elements operating inside or substituting for a Noun Phrase projection (PRON, DET, NUM), managing reference, quantification, or deixis.",
   "type": "object",
   "properties": {
     "pos_payload": {
       "type": "object",
+      "description": "The morphological and syntactic behavioral payload describing nominal arguments and phrasal modifiers.",
       "properties": {
         "functional_scope": {
           "type": "string",
@@ -13,7 +16,8 @@
             "PERSONAL",
             "QUANTIFIER",
             "CARDINAL"
-          ]
+          ],
+          "description": "The baseline operational domain of the token, indicating whether it establishes reference, person identity, numeric quantity, or spacial/discoursal deixis."
         },
         "token_class": {
           "type": "string",
@@ -21,36 +25,55 @@
             "pronoun",
             "determiner",
             "quantifier",
+            "numeral",
             "cardinal"
-          ]
+          ],
+          "description": "The lexical taxonomy of the closed-class token, mapping straight to corresponding UPOS designations."
         },
         "gender": {
-          "type": "string"
+          "type": "string",
+          "description": "Grammatical or biological gender distinctions encoded directly by the nominal token where applicable."
         },
         "case": {
-          "type": "string"
+          "type": "string",
+          "description": "Abstract morphosyntactic alignment or case associations bound inherently to the functional word form."
+        },
+        "ud_deprel_default": {
+          "type": "string",
+          "enum": [
+            "nsubj",
+            "obj",
+            "iobj",
+            "det",
+            "nummod",
+            "root"
+          ],
+          "description": "The default target dependency relation for this category in a UD syntax tree."
         },
         "surface_forms": {
           "type": "array",
           "items": {
             "type": "string"
-          }
+          },
+          "description": "List of standard orthographic variations, bound morph variants, or allomorphs representing this entity."
         },
         "usage_notes": {
-          "type": "string"
+          "type": "string",
+          "description": "Contextual documentation on stylistic conditions, generational registers, or dialect-specific distributions."
         },
         "structural_constraints": {
           "type": "array",
           "items": {
             "type": "string"
           },
-          "description": ""
+          "description": "Explicit phrasal boundary conditions, required agreement flags, or linear token ordering dependencies for dependency parsing rules."
         }
       },
       "required": [
         "functional_scope",
         "token_class",
-        "surface_forms"
+        "surface_forms",
+        "ud_deprel_default"
       ],
       "additionalProperties": false
     }

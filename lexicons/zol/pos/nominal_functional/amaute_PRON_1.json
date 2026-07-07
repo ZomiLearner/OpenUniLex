@@ -128,6 +128,7 @@
 		"functional_scope": "PERSONAL",
 		"gender": "unspecified",
 		"case": "default",
+		"ud_deprel_default": "nsubj",
 		"surface_forms": [
 			"amaute"
 		],

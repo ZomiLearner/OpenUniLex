@@ -105,6 +105,7 @@
 		"functional_scope": "PERSONAL",
 		"gender": "masculine",
 		"case": "default",
+		"ud_deprel_default": "nsubj",
 		"surface_forms": [
 			"amahpa"
 		],
