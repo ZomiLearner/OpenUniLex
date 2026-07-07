@@ -184,8 +184,7 @@
             "enum": [
               "PRON",
               "DET",
-              "NUM",
-              "ADP"
+              "NUM"
             ]
           }
         }
@@ -199,10 +198,24 @@
         "properties": {
           "upos": {
             "enum": [
+              "ADP",
+              "CCONJ",
+              "SCONJ"
+            ]
+          }
+        }
+      },
+      "then": {
+        "$ref": "https://OpenUniLex.org/schemas/upos/relational/v1.0.0.relational_binding.schema.json"
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "upos": {
+            "enum": [
               "PART",
               "AUX",
-              "CCONJ",
-              "SCONJ",
               "INTJ"
             ]
           }
