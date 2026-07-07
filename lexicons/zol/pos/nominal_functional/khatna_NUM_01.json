@@ -1,0 +1,126 @@
+{
+  "$schema": "https://OpenUniLex.org/schemas/language_specific/zol/v1.0.0.zol_features.schema.json",
+  "lemma": "khatna",
+  "upos": "NUM",
+  "dialect_tag": "UNIVERSAL",
+  "semantic_domain": "8.1.1.1",
+  "morph_type": "DERIVATIONAL",
+  "xpos": "NUM",
+  "feats": {
+    "universal": {
+      "NumType": "Ord"
+    },
+    "language_specific": {
+      "zol": {}
+    }
+  },
+  "senses": [
+    {
+      "sense_id": "khatna_NUM_01_SENSE_01_ORD",
+      "gloss": "first",
+      "semantic_domain": "8.1.1.1",
+      "valency_frame": {
+        "valency_type": "nominal_modifier",
+        "arguments": [
+          {
+            "role": "ORDER_SPECIFIER",
+            "deprel": "nummod",
+            "description": "Modifies a head noun postpositionally to designate an ordinal sequence position.",
+            "is_obligatory": true
+          }
+        ]
+      },
+      "contextual_requirements": {
+        "preceding_element": {
+          "upos": "NOUN",
+          "note": "Sits directly after the noun head to denote sequence order (e.g., 'laibu khatna' = the first book)."
+        }
+      },
+      "examples": [
+        {
+          "surface_text": "Hih pen laibu khatna ahi hi.",
+          "english_translation": "This is the first book.",
+          "gloss_alignment": [
+            {
+              "token": "Hih",
+              "morphemes": [
+                "hih"
+              ],
+              "gloss": "this",
+              "upos_target": "DET"
+            },
+            {
+              "token": "pen",
+              "morphemes": [
+                "pen"
+              ],
+              "gloss": "TOP",
+              "upos_target": "PART"
+            },
+            {
+              "token": "laibu",
+              "morphemes": [
+                "laibu"
+              ],
+              "gloss": "book",
+              "upos_target": "NOUN"
+            },
+            {
+              "token": "khatna",
+              "morphemes": [
+                "khat",
+                "-na"
+              ],
+              "gloss": "first",
+              "upos_target": "NUM"
+            },
+            {
+              "token": "ahi",
+              "morphemes": [
+                "ahi"
+              ],
+              "gloss": "be",
+              "upos_target": "AUX"
+            },
+            {
+              "token": "hi",
+              "morphemes": [
+                "hi"
+              ],
+              "gloss": "ASSERT",
+              "upos_target": "PART"
+            }
+          ],
+          "external_links": {
+            "ili_id": "",
+            "verbnet_class": ""
+          }
+        }
+      ]
+    }
+  ],
+  "pos_payload": {
+    "functional_scope": "CARDINAL",
+    "token_class": "numeral",
+    "ud_deprel_default": "nummod",
+    "surface_forms": [
+      "khatna"
+    ],
+    "structural_constraints": [
+      "Derived morphologically by joining the nominalizer suffix '-na' to the cardinal base 'khat'.",
+      "In a UD dependency graph, it retains 'nummod' as its primary syntactic relation rather than an adjectival 'amod', tracking closely with standard Tibeto-Burman sequence marking behavior."
+    ]
+  },
+  "metadata": {
+    "source": "Zomi NLP Core Treebank Projects",
+    "authors": [
+      "zomi-nlp-engine-team"
+    ],
+    "license": "MIT",
+    "created_by": "automated_parser_v0.4.0",
+    "created_at": "2026-07-08T01:35:00Z",
+    "status": "VALIDATED",
+    "ud_compliant": true,
+    "version": 1
+  }
+}

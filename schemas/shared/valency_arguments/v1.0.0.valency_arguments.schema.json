@@ -48,6 +48,7 @@
               "QUANTIFIER",
               "MARKER",
               "COPULA",
+              "ORDER_SPECIFIER",
               "ENVIRONMENTAL_EXPONENT"
             ]
           },
