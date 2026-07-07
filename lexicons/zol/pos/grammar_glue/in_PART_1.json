@@ -17,33 +17,60 @@
       }
     }
   },
+  "senses": [
+    {
+      "sense_id": "in_PART_01_SENSE_01_IMP",
+      "gloss": "imperative particle",
+      "semantic_domain": "3.5.2.2",
+      "valency_frame": {
+        "valency_type": "clausal_modifier",
+        "arguments": [
+          {
+            "role": "MODIFIER",
+            "deprel": "advmod",
+            "description": "Attaches postverbally to clause-final verbs (typically Stem I) to mark positive imperative mood.",
+            "is_obligatory": true
+          }
+        ]
+      },
+      "contextual_requirements": {
+        "preceding_element": {
+          "upos": "VERB",
+          "morph_features": {
+            "VerbForm": "Inf"
+          },
+          "note": "Typically selects for the primary root/Stem I forms of action verbs."
+        }
+      },
+      "examples": [
+        {
+          "surface_text": "Pai in!",
+          "english_translation": "Go!",
+          "gloss_alignment": [
+            {
+              "token": "Pai",
+              "morphemes": ["pai"],
+              "gloss": "go.StemI",
+              "upos_target": "VERB"
+            },
+            {
+              "token": "in",
+              "morphemes": ["in"],
+              "gloss": "IMP",
+              "upos_target": "PART"
+            }
+          ],
+          "external_links": {
+            "ili_id": "",
+            "verbnet_class": ""
+          }
+        }
+      ]
+    }
+  ],
   "pos_payload": {
     "attachment_target": "POSTVERBAL",
-    "ud_deprel_default": "advmod",
-    "examples": [
-      {
-        "surface_text": "Pai in!",
-        "english_translation": "Go!",
-        "gloss_alignment": [
-          {
-            "token": "Pai",
-            "morphemes": ["pai"],
-            "gloss": "go.StemI",
-            "upos_target": "VERB"
-          },
-          {
-            "token": "in",
-            "morphemes": ["in"],
-            "gloss": "IMP",
-            "upos_target": "PART"
-          }
-        ],
-        "external_links": {
-          "ili_id": "",
-          "verbnet_class": ""
-        }
-      }
-    ]
+    "ud_deprel_default": "advmod"
   },
   "metadata": {
     "source": "Zomi NLP Core Treebank Projects",

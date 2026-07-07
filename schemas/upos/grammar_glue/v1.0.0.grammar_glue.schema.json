@@ -35,8 +35,7 @@
       },
       "required": [
         "attachment_target",
-        "ud_deprel_default",
-        "examples"
+        "ud_deprel_default"
       ],
       "additionalProperties": false
     }
