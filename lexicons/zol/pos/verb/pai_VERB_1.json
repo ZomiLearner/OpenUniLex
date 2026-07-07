@@ -79,21 +79,7 @@
     }
   ],
   "pos_payload": {
-    "valency_frame": {
-      "valency_type": "intransitive",
-      "arguments": [
-        {
-          "role": "AGENT",
-          "deprel": "nsubj",
-          "is_obligatory": true
-        },
-        {
-          "role": "LOCATION_DESTINATION",
-          "deprel": "obl",
-          "is_obligatory": false
-        }
-      ]
-    },
+    
     "stem_alternations": {
       "stem_i": "pai"
     },

@@ -7,9 +7,6 @@
       "type": "object",
 
       "properties": {
-        "valency_frame": {
-          "$ref": "https://OpenUniLex.org/schemas/shared/valency_arguments/v1.0.0.valency_arguments.schema.json"
-        },
         "stem_alternations": {
           "type": "object",
           "properties": {
@@ -33,7 +30,6 @@
         }
       },
       "required": [
-        "valency_frame",
         "stem_alternations",
         "examples"
       ]
