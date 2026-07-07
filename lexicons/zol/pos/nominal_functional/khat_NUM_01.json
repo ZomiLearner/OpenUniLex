@@ -1,0 +1,83 @@
+{
+  "$schema": "https://OpenUniLex.org/schemas/language_specific/zol/v1.0.0.zol_features.schema.json",
+  "lemma": "khat",
+  "upos": "NUM",
+  "dialect_tag": "UNIVERSAL",
+  "semantic_domain": "8.1.1.1",
+  "morph_type": "NONE",
+  "xpos": "NUM",
+  "feats": {
+    "universal": {
+      "NumType": "Card"
+    },
+    "language_specific": {
+      "zol": {}
+    }
+  },
+  "senses": [
+    {
+      "sense_id": "khat_NUM_01_SENSE_01_CARD",
+      "gloss": "one",
+      "semantic_domain": "8.1.1.1",
+      "valency_frame": {
+        "valency_type": "nominal_modifier",
+        "arguments": [
+          {
+            "role": "QUANTIFIER",
+            "deprel": "nummod",
+            "description": "Modifies a head noun postpositionally to specify a precise cardinal quantity of one.",
+            "is_obligatory": true
+          }
+        ]
+      },
+      "contextual_requirements": {
+        "preceding_element": {
+          "upos": "NOUN",
+          "note": "Attaches to the right edge of a noun phrase head (e.g., 'laibu khat' = one book)."
+        }
+      },
+      "examples": [
+        {
+          "surface_text": "Ken laibu khat ka nei hi.",
+          "english_translation": "I have one book.",
+          "gloss_alignment": [
+            { "token": "Ken", "morphemes": ["ke", "-in"], "gloss": "1SG.ERG", "upos_target": "PRON" },
+            { "token": "laibu", "morphemes": ["laibu"], "gloss": "book", "upos_target": "NOUN" },
+            { "token": "khat", "morphemes": ["khat"], "gloss": "one", "upos_target": "NUM" },
+            { "token": "ka", "morphemes": ["ka"], "gloss": "1SG.AGR", "upos_target": "PRON" },
+            { "token": "nei", "morphemes": ["nei"], "gloss": "have", "upos_target": "VERB" },
+            { "token": "hi", "morphemes": ["hi"], "gloss": "ASSERT", "upos_target": "PART" }
+          ],
+          "external_links": {
+            "ili_id": "",
+            "verbnet_class": ""
+          }
+        }
+      ]
+    }
+  ],
+  "pos_payload": {
+    "functional_scope": "CARDINAL",
+    "token_class": "numeral",
+    "ud_deprel_default": "nummod",
+    "surface_forms": [
+      "khat"
+    ],
+    "structural_constraints": [
+      "Follows the head noun it quantifies inside the nominal projection.",
+      "In a UD treebank graph, it projects a 'nummod' dependency relation back up to its host noun head."
+    ]
+  },
+  "metadata": {
+    "source": "Zomi NLP Core Treebank Projects",
+    "authors": [
+      "zomi-nlp-engine-team"
+    ],
+    "license": "MIT",
+    "created_by": "automated_parser_v0.4.0",
+    "created_at": "2026-07-08T01:30:00Z",
+    "status": "VALIDATED",
+    "ud_compliant": true,
+    "version": 1
+  }
+}

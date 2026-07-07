@@ -45,6 +45,7 @@
               "TIME",
               "ARGUMENT",
               "MODIFIER",
+              "QUANTIFIER",
               "MARKER",
               "COPULA",
               "ENVIRONMENTAL_EXPONENT"
