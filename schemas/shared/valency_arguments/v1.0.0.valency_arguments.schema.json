@@ -34,6 +34,7 @@
               "LOCATION",
               "LOCATION_DESTINATION",
               "SOURCE_LOCATION",
+              "DESTINATION_LOCATION",
               "TIME"
             ]
           },
