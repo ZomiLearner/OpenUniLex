@@ -13,6 +13,7 @@
         "stative",
         "nominal_argument",
         "clausal_modifier",
+        "case_marking",
         "unspecified"
       ]
     },
@@ -41,6 +42,7 @@
               "TIME",
               "ARGUMENT",
               "MODIFIER",
+              "MARKER",
               "ENVIRONMENTAL_EXPONENT"
             ]
           },
