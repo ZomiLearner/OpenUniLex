@@ -20,6 +20,109 @@
 			}
 		}
 	},
+	"senses": [
+		{
+			"sense_id": "amaute_PRON_01_SENSE_01_SUBJ",
+			"gloss": "they (subjective)",
+			"semantic_domain": "1.1.1_PRONOUN",
+			"valency_frame": {
+				"valency_type": "nominal_argument",
+				"arguments": [
+					{
+						"role": "ARGUMENT",
+						"deprel": "nsubj",
+						"description": "Licenses distribution as a core nominal subject.",
+						"is_obligatory": true
+					}
+				]
+			},
+			"contextual_requirements": null,
+			"examples": [
+				{
+					"surface_text": "Amaute pai hi.",
+					"english_translation": "They go.",
+					"gloss_alignment": [
+						{
+							"token": "Amaute",
+							"gloss": "they",
+							"upos_target": "PRON"
+						},
+						{
+							"token": "pai",
+							"gloss": "go",
+							"upos_target": "VERB"
+						},
+						{
+							"token": "hi",
+							"gloss": "ASSERT",
+							"upos_target": "PART"
+						}
+					]
+				}
+			]
+		},
+		{
+			"sense_id": "amaute_PRON_01_SENSE_01_OBJ",
+			"gloss": "them (objective)",
+			"semantic_domain": "1.1.1_PRONOUN",
+			"valency_frame": {
+				"valency_type": "nominal_argument",
+				"arguments": [
+					{
+						"role": "ARGUMENT",
+						"deprel": "obj",
+						"description": "Licenses distribution as a core nominal direct object.",
+						"is_obligatory": true
+					}
+				]
+			},
+			"contextual_requirements": null,
+			"examples": [
+				{
+					"surface_text": "Amaute mu ing.",
+					"english_translation": "I see them.",
+					"gloss_alignment": [
+						{
+							"token": "Amaute",
+							"gloss": "them",
+							"upos_target": "PRON"
+						},
+						{
+							"token": "mu",
+							"gloss": "see",
+							"upos_target": "VERB"
+						},
+						{
+							"token": "ing",
+							"gloss": "1SG",
+							"upos_target": "PRON"
+						}
+					]
+				},
+				{
+					"surface_text": "Amaute huh in.",
+					"english_translation": "Help them.",
+					"gloss_alignment": [
+						{
+							"token": "Amaute",
+							"gloss": "them",
+							"upos_target": "PRON"
+						},
+						{
+							"token": "huh",
+							"gloss": "help",
+							"upos_target": "VERB"
+						},
+						{
+							"token": "in",
+							"gloss": "IMP",
+							"upos_target": "PART"
+						}
+					]
+				}
+			]
+		}
+	],
 	"pos_payload": {
 		"token_class": "pronoun",
 		"functional_scope": "PERSONAL",
@@ -28,30 +131,7 @@
 		"surface_forms": [
 			"amaute"
 		],
-		"usage_notes": "Third-person plural pronoun meaning 'they'.",
-		"examples": [
-			{
-				"surface_text": "Amaute pai hi.",
-				"english_translation": "They go.",
-				"gloss_alignment": [
-					{
-						"token": "Amaute",
-						"gloss": "they",
-						"upos_target": "PRON"
-					},
-					{
-						"token": "pai",
-						"gloss": "go",
-						"upos_target": "VERB"
-					},
-					{
-						"token": "hi",
-						"gloss": "ASSERT",
-						"upos_target": "PART"
-					}
-				]
-			}
-		]
+		"usage_notes": "Third-person plural pronoun meaning 'they'."
 	},
 	"metadata": {
 		"source": "zol lexicon",
@@ -60,8 +140,8 @@
 		],
 		"license": "CC-BY-SA-4.0",
 		"created_by": "OpenUniLex",
-		"created_at": "2026-07-06",
-		"status": "DRAFT",
+		"created_at": "2026-07-07T10:26:00Z",
+		"status": "VALIDATED",
 		"version": 1
 	}
 }
