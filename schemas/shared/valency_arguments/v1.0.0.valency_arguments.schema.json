@@ -1,0 +1,61 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://OpenUniLex.org/schemas/shared/valency_arguments/v1.0.0.valency_arguments.schema.json",
+  "type": "object",
+  "properties": {
+    "valency_type": {
+      "type": "string",
+      "enum": [
+        "transitive",
+        "intransitive",
+        "ditransitive",
+        "ambient",
+        "stative"
+      ]
+    },
+    "arguments": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "role": {
+            "type": "string",
+            "enum": [
+              "AGENT",
+              "PATIENT",
+              "THEME",
+              "EXPERIENCER",
+              "STIMULUS",
+              "RECIPIENT",
+              "BENEFICIARY",
+              "GOAL",
+              "SOURCE",
+              "INSTRUMENT",
+              "LOCATION",
+              "LOCATION_DESTINATION",
+              "SOURCE_LOCATION",
+              "TIME"
+            ]
+          },
+          "deprel": {
+            "$ref": "https://OpenUniLex.org/schemas/shared/ud_deprels/v1.0.0.ud_dreprels.schema.json"
+          },
+          "is_obligatory": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "role",
+          "deprel",
+          "is_obligatory"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "valency_type",
+    "arguments"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,83 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://OpenUniLex.org/schemas/upos/modifier/v1.0.0.modifier.schema.json",
+  "type": "object",
+  "properties": {
+    "pos_payload": {
+      "type": "object",
+      "description": "Payload for ADJ and ADV parts of speech. Includes morphosyntactic type and modification scope.",
+      "properties": {
+        "morph_type": {
+          "type": "string",
+          "description": "Morphological subtype of the modifier.",
+          "enum": [
+            "DEGREE",
+            "COMPARATIVE",
+            "SUPERLATIVE",
+            "INTENSIFIER",
+            "ASPECTUAL",
+            "MANNER",
+            "TEMPORAL",
+            "LOCATIVE",
+            "QUANTIFIER",
+            "NEGATOR",
+            "ROOT",
+            "REDUPLICATED"
+          ]
+        },
+        "modification_scope": {
+          "type": "string",
+          "enum": [
+            "NOUN_PHRASE",
+            "VERB_PHRASE",
+            "CLAUSAL",
+            "NOMINAL",
+            "VERBAL"
+          ]
+        },
+        "internal_structure": {
+          "type": "object",
+          "description": "Morphological decomposition of the modifier, including reduplication or derivational structure.",
+          "properties": {
+            "root_lemma": {
+              "type": "string"
+            },
+            "reduplication_type": {
+              "type": "string",
+              "enum": [
+                "TOTAL",
+                "PARTIAL"
+              ]
+            },
+            "morphotactics": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "root_lemma"
+          ],
+          "additionalProperties": false
+        },
+        "feats": {
+          "type": "object",
+          "description": "UD-style morphological features associated with the modifier.",
+          "additionalProperties": {
+            "type": "string"
+          }
+        },
+        "examples": {
+          "type": "array",
+          "items": {
+            "$ref": "https://OpenUniLex.org/schemas/shared/igt_example/v1.0.0.igt_example.schema.json"
+          }
+        }
+      },
+      "required": [
+        "morph_type",
+        "modification_scope",
+        "examples"
+      ],
+      "additionalProperties": false
+    }
+  }
+}

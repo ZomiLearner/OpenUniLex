@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://OpenUniLex.org/schemas/upos/grammar_glue/v1.0.0.grammar_glue.schema.json",
+  "type": "object",
+  "properties": {
+    "pos_payload": {
+      "type": "object",
+      "description": "",
+      "properties": {
+        "attachment_target": {
+          "type": "string",
+          "enum": [
+            "PREVERBAL",
+            "POSTVERBAL",
+            "SENTENCE_FINAL",
+            "NOUN_BOUND"
+          ]
+        },
+        "ud_deprel_default": {
+          "type": "string",
+          "enum": [
+            "mark",
+            "aux",
+            "cc",
+            "advmod",
+            "discourse"
+          ]
+        },
+        "examples": {
+          "type": "array",
+          "items": {
+            "$ref": "https://OpenUniLex.org/schemas/shared/igt_example/v1.0.0.igt_example.schema.json"
+          }
+        }
+      },
+      "required": [
+        "attachment_target",
+        "ud_deprel_default",
+        "examples"
+      ],
+      "additionalProperties": false
+    }
+  }
+}

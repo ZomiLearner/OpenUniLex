@@ -1,0 +1,91 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://OpenUniLex.org/schemas/shared/metadata/v1.0.0.metadata.schema.json",
+  "type": "object",
+  "properties": {
+    "source": {
+      "type": "string",
+      "description": "Origin of the lexeme entry (dictionary, corpus, fieldwork, contributor, etc.)."
+    },
+    "authors": {
+      "type": "array",
+      "description": "List of contributors who created or edited the entry.",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1
+    },
+    "license": {
+      "type": "string",
+      "description": "License governing the lexeme entry (e.g., CC-BY-SA-4.0)."
+    },
+    "created_by": {
+      "type": "string",
+      "description": "User or system that created the entry."
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date",
+      "description": "Date the entry was created (YYYY-MM-DD)."
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "DRAFT",
+        "REVIEWED",
+        "VALIDATED"
+      ],
+      "description": "Validation status of the lexeme entry."
+    },
+    "ud_compliant": {
+      "type": "boolean"
+    },
+    "version": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "Incremented version number for the lexeme entry."
+    },
+    "change_log": {
+      "type": "array",
+      "description": "History of edits applied to the entry.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "edited_by": {
+            "type": "string"
+          },
+          "edited_at": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "fields_modified": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "List of fields modified, e.g., ['valency_frame', 'examples']"
+          },
+          "purpose": {
+            "type": "string",
+            "description": "Reason for the edit."
+          }
+        },
+        "required": [
+          "edited_by",
+          "edited_at",
+          "fields_modified"
+        ]
+      }
+    }
+  },
+  "required": [
+    "source",
+    "authors",
+    "license",
+    "created_by",
+    "created_at",
+    "status",
+    "version"
+  ],
+  "additionalProperties": false
+}

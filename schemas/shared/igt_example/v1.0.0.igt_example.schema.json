@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://OpenUniLex.org/schemas/shared/igt_example/v1.0.0.igt_example.schema.json",
+  "type": "object",
+  "properties": {
+    "sentence_id": {
+      "type": "string",
+      "pattern": "^EX\\.[0-9]+$"
+    },
+    "surface_text": {
+      "type": "string"
+    },
+    "english_translation": {
+      "type": "string"
+    },
+    "gloss_alignment": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "token": {
+            "type": "string"
+          },
+          "morphemes": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "gloss": {
+            "type": "string"
+          },
+          "upos_target": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "token",
+          "gloss"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "external_links": {
+      "type": "object",
+      "properties": {
+        "ili_id": {
+          "type": "string",
+          "description": "Interlingual Index ID for WordNet alignment (e.g., i54321)"
+        },
+        "verbnet_class": {
+          "type": "string",
+          "description": "VerbNet Class ID (e.g., admire-31.2)"
+        }
+      }
+    }
+  },
+  "required": [
+    "surface_text",
+    "english_translation",
+    "gloss_alignment"
+  ],
+  "additionalProperties": false
+}

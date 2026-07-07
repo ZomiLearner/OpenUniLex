@@ -1,0 +1,129 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://OpenUniLex.org/schemas/shared/morph_features/v1.0.0.morph_features.base.schema.json",
+  "type": "object",
+  "title": "Base Morphological Features",
+  "description": "Base schema with UD features - to be extended by language-specific schemas",
+  
+  "definitions": {
+    "UD_Features": {
+      "type": "object",
+      "description": "Universal Dependencies standardized morphological features",
+      "properties": {
+        "Person": {
+          "description": "Grammatical person",
+          "type": "string",
+          "enum": ["1", "2", "3"]
+        },
+        "Number": {
+          "description": "Grammatical number",
+          "type": "string",
+          "enum": ["Sing", "Plur"]
+        },
+        "Gender": {
+          "description": "Grammatical gender",
+          "type": "string",
+          "enum": ["Masc", "Fem", "Neut"]
+        },
+        "Animacy": {
+          "description": "Animacy class",
+          "type": "string",
+          "enum": ["Anim", "Inan"]
+        },
+        "Case": {
+          "description": "Grammatical case",
+          "type": "string",
+          "enum": [
+            "Nom", "Acc", "Dat", "Gen", "Voc", "Abl", "Ins", "Loc", 
+            "Com", "Ben", "Cau", "Ess", "Par", "Ter", "Ade", "Ine", 
+            "Ill", "Ela", "All", "Abl", "Sup", "Sub", "Erg", "Abs"
+          ]
+        },
+        "Aspect": {
+          "description": "Aspectual feature",
+          "type": "string",
+          "enum": ["Imp", "Perf", "Prog", "Iter", "Hab", "Inch", "Punct", "Prosp"]
+        },
+        "Mood": {
+          "description": "Grammatical mood",
+          "type": "string",
+          "enum": ["Ind", "Imp", "Cnd", "Pot", "Subj", "Jus", "Qot", "Opt", "Des", "Nec"]
+        },
+        "Tense": {
+          "description": "Grammatical tense",
+          "type": "string",
+          "enum": ["Past", "Pres", "Fut"]
+        },
+        "Voice": {
+          "description": "Grammatical voice",
+          "type": "string",
+          "enum": ["Act", "Pass", "Mid", "Cau", "Rcp", "Antip"]
+        },
+        "PronType": {
+          "description": "Pronoun type",
+          "type": "string",
+          "enum": ["Prs", "Rcp", "Ref", "Dem", "Int", "Rel", "Tot", "Neg", "Ind"]
+        },
+        "NumType": {
+          "description": "Numeral type",
+          "type": "string",
+          "enum": ["Card", "Ord", "Mult", "Frac", "Dist", "Range", "Sets"]
+        },
+        "Definite": {
+          "description": "Definiteness",
+          "type": "string",
+          "enum": ["Def", "Ind"]
+        },
+        "Degree": {
+          "description": "Degree of comparison",
+          "type": "string",
+          "enum": ["Pos", "Comp", "Sup", "Abs"]
+        },
+        "Polarity": {
+          "description": "Polarity",
+          "type": "string",
+          "enum": ["Pos", "Neg"]
+        },
+        "VerbForm": {
+          "description": "Verb form",
+          "type": "string",
+          "enum": ["Fin", "Inf", "Part", "Ger", "Conv", "Sup", "Vnoun"]
+        },
+        "NumForm": {
+          "description": "Numeral form",
+          "type": "string",
+          "enum": ["Digit", "Roman", "Word"]
+        },
+        "Deriv": {
+          "description": "Derivational feature",
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  
+  "properties": {
+    "feats": {
+      "type": "object",
+      "description": "Morphological features for the lexical entry",
+      "properties": {
+        "universal": {
+          "$ref": "#/definitions/UD_Features",
+          "description": "UD-standardized morphological features"
+        },
+        "language_specific": {
+          "type": "object",
+          "description": "Language-specific morphological features",
+          "additionalProperties": {
+            "type": "object",
+            "description": "Features specific to a language"
+          }
+        }
+      },
+      "required": ["universal"],
+      "additionalProperties": false
+    }
+  },
+  "required": ["feats"]
+}

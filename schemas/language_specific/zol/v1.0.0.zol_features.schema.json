@@ -1,0 +1,90 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://OpenUniLex.org/schemas/language_specific/zol/v1.0.0.zol_features.schema.json",
+  "title": "Zomi (Zol) Morphological Features",
+  "description": "Zomi-specific morphological features extending UD standards",
+  
+  "allOf": [
+    {
+      "$ref": "https://OpenUniLex.org/schemas/shared/morph_features/v1.0.0.morph_features.base.schema.json"
+    }
+  ],
+  
+  "properties": {
+    "feats": {
+      "properties": {
+        "universal": {
+          "$ref": "https://OpenUniLex.org/schemas/shared/morph_features/v1.0.0.morph_features.base.schema.json#/definitions/UD_Features",
+          "description": "UD features with Zomi-specific restrictions where needed"
+        },
+        "language_specific": {
+          "properties": {
+            "zol": {
+              "type": "object",
+              "description": "Zomi-specific morphological features",
+              "properties": {
+                "NounClass": {
+                  "description": "Noun class system in Zomi",
+                  "type": "string",
+                  "enum": ["Class1", "Class2", "Class3", "Class4", "Class5", "Class6", "Class7", "Class8", "Class9", "Class10"]
+                },
+                "Possessor": {
+                  "description": "Possessor person/number marking",
+                  "type": "string",
+                  "enum": ["1SG", "2SG", "3SG", "1PL", "2PL", "3PL"]
+                },
+                "Assoc": {
+                  "description": "Associative marker ('te' in Zomi)",
+                  "type": "string",
+                  "enum": ["Assoc"]
+                },
+                "PolarityParticle": {
+                  "description": "Polarity particle types",
+                  "type": "string",
+                  "enum": ["Aff", "Neg", "Interr"]
+                },
+                "Directional": {
+                  "description": "Directional/locational particles",
+                  "type": "string",
+                  "enum": ["Up", "Down", "In", "Out", "Toward", "Away", "Across"]
+                },
+                "Honorific": {
+                  "description": "Honorific levels",
+                  "type": "string",
+                  "enum": ["Hon", "Plain"]
+                },
+                "Evidential": {
+                  "description": "Evidentiality markers",
+                  "type": "string",
+                  "enum": ["Direct", "Reported", "Inferential", "Visual", "Hearsay"]
+                },
+                "Nominalizer": {
+                  "description": "Nominalizer types",
+                  "type": "string",
+                  "enum": ["Agentive", "Patientive", "Instrumental", "Locational", "Abstract"]
+                },
+                "SerialVerb": {
+                  "description": "Serial verb construction type",
+                  "type": "string",
+                  "enum": ["Sequential", "Simultaneous", "Causal", "Purposive"]
+                },
+                "Reduplication": {
+                  "description": "Reduplication pattern",
+                  "type": "string",
+                  "enum": ["Full", "Partial", "Rhyming", "Intensifying", "Distributive"]
+                },
+                "Valency": {
+                  "description": "Valency type (in addition to UD)",
+                  "type": "string",
+                  "enum": ["Intrans", "Trans", "Ditrans", "Ambitrans"]
+                }
+              },
+              "additionalProperties": false
+            }
+          },
+          "additionalProperties": false
+        }
+      }
+    }
+  }
+}

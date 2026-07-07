@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://OpenUniLex.org/schemas/upos/structural_void/v1.0.0.structural_void.schema.json",
+  "title": "Structural Void UPOS Profile (PUNCT, SYM, X)",
+  "description": "Schema for specialized non-linguistic assets: punctuation, symbols, and other structural tokens.",
+  "type": "object",
+  "properties": {
+    "pos_payload": {
+      "type": "object",
+      "description": "Payload for structural items; minimal, non-morphological.",
+      "properties": {
+        "token_class": {
+          "type": "string",
+          "enum": ["punctuation", "symbol", "other_structural"],
+          "description": "High-level class of structural item."
+        },
+        "surface_forms": {
+          "type": "array",
+          "description": "List of concrete surface forms represented by this entry.",
+          "items": {
+            "type": "string"
+          }
+        },
+        "usage_notes": {
+          "type": "string",
+          "description": "Optional notes on usage, layout, or orthographic conventions."
+        }
+      },
+      "required": ["token_class", "surface_forms"],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "pos_payload"
+  ]
+}

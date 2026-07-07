@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://OpenUniLex.org/schemas/shared/derivation/v1.0.0.derivation.schema.json",
+  "type": "object",
+  "properties": {
+    "base_lemma": {
+      "type": "string",
+      "description": "The lemma from which this form is derived."
+    },
+    "base_upos": {
+      "type": "string",
+      "enum": [
+        "NOUN",
+        "VERB",
+        "ADJ",
+        "ADV"
+      ],
+      "description": "The UPOS category of the base lemma."
+    },
+    "process": {
+      "type": "string",
+      "enum": [
+        "NOMINALIZATION",
+        "VERBALIZATION",
+        "ADJECTIVIZATION",
+        "ADVERBIALIZATION",
+        "CAUSATIVE",
+        "APPLICATIVE",
+        "RECIPROCAL",
+        "DIMINUTIVE",
+        "AUGMENTATIVE",
+        "OTHER"
+      ],
+      "description": "Type of derivational process."
+    },
+    "morpheme": {
+      "type": "string",
+      "description": "The affix or morphological marker used in derivation."
+    },
+    "notes": {
+      "type": "string",
+      "description": "Optional human-readable explanation."
+    }
+  },
+  "required": [
+    "base_lemma",
+    "base_upos",
+    "process",
+    "morpheme"
+  ],
+  "additionalProperties": false
+}

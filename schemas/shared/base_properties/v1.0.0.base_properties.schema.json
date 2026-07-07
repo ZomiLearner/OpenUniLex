@@ -1,0 +1,68 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://OpenUniLex.org/schemas/shared/base_properties/v1.0.0.base_properties.schema.json",
+  "type": "object",
+  "properties": {
+    "lemma": {
+      "type": "string",
+      "pattern": "^[a-z ,]+$",
+      "description": "Diacritic-free orthographic representation of the lemma."
+    },
+    "upos": {
+      "type": "string",
+      "enum": [
+        "ADJ",
+        "ADP",
+        "ADV",
+        "AUX",
+        "CCONJ",
+        "DET",
+        "INTJ",
+        "NOUN",
+        "NUM",
+        "PART",
+        "PRON",
+        "PROPN",
+        "PUNCT",
+        "SCONJ",
+        "SYM",
+        "VERB",
+        "X"
+      ]
+    },
+    "xpos": {
+      "type": "string",
+      "description": "Language-specific language tag mapping, e.g., V.DYN"
+    },
+    "dialect_tag": {
+      "type": "string",
+      "enum": [
+        "UNIVERSAL",
+        "STANDARD",
+        "TEDIM",
+        "SIZANG"
+      ]
+    },
+    "semantic_domain": {
+      "type": "string",
+      "pattern": "^[1-9]\\d*(?:\\.[0-9]\\d*)*(?:_[A-Za-z0-9_-]+)?$",
+      "description": "Structured SIL Semantic Domain code (e.g., 3.2)."
+    },
+    "morph_type": {
+      "type": "string",
+      "enum": [
+        "INFLECTIONAL",
+        "DERIVATIONAL",
+        "COMPOUND",
+        "NONE",
+        "NON_LINGUISTIC"
+      ]
+    }
+  },
+  "required": [
+    "lemma",
+    "upos",
+    "dialect_tag",
+    "semantic_domain"
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "master": {
+    "versions": {
+      "1": "schemas/master/v1.0.0.master.schema.json"
+    },
+    "default": "1"
+  },
+  "shared": {
+    "base_properties": {
+      "versions": {
+        "1": "schemas/shared/base_properties/v1.0.0.base_properties.schema.json"
+      },
+      "default": "1"
+    },
+    "derivation": {
+      "versions": {
+        "1": "schemas/shared/derivation/v1.0.0.derivation.schema.json"
+      },
+      "default": "1"
+    },
+    "igt_example": {
+      "versions": {
+        "1": "schemas/shared/igt_example/v1.0.0.igt_example.schema.json"
+      },
+      "default": "1"
+    },
+    "metadata": {
+      "versions": {
+        "1": "schemas/shared/metadata/v1.0.0.metadata.schema.json"
+      },
+      "default": "1"
+    },
+    "morph_features": {
+      "versions": {
+        "1": "schemas/shared/morph_features/v1.0.0.morph_features.base.schema.json"
+      },
+      "default": "1"
+    },
+    "ud_deprels": {
+      "versions": {
+        "1": "schemas/shared/ud_deprels/v1.0.0.ud_dreprels.schema.json"
+      },
+      "default": "1"
+    },
+    "valency_arguments": {
+      "versions": {
+        "1": "schemas/shared/valency_arguments/v1.0.0.valency_arguments.schema.json"
+      },
+      "default": "1"
+    }
+  },
+  "upos": {
+    "functional": {
+      "versions": {
+        "1": "schemas/upos/functional/v1.0.0.functional.schema.json"
+      },
+      "default": "1"
+    },
+    "grammar_glue": {
+      "versions": {
+        "1": "schemas/upos/grammar_glue/v1.0.0.grammar_glue.schema.json"
+      },
+      "default": "1"
+    },
+    "modifier": {
+      "versions": {
+        "1": "schemas/upos/modifier/v1.0.0.modifier.schema.json"
+      },
+      "default": "1"
+    },
+    "noun": {
+      "versions": {
+        "1": "schemas/upos/noun/v1.0.0.noun.schema.json"
+      },
+      "default": "1"
+    },
+    "structural_void": {
+      "versions": {
+        "1": "schemas/upos/structural_void/v1.0.0.structural_void.schema.json"
+      },
+      "default": "1"
+    },
+    "verb": {
+      "versions": {
+        "1": "schemas/upos/verb/v1.0.0.verb.schema.json"
+      },
+      "default": "1"
+    }
+  }
+}

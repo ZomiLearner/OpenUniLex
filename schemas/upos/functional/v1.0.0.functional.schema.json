@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://OpenUniLex.org/schemas/upos/functional/v1.0.0.functional.schema.json",
+  "type": "object",
+  "properties": {
+    "pos_payload": {
+      "type": "object",
+      "properties": {
+        "functional_scope": {
+          "type": "string",
+          "enum": [
+            "DEICTIC",
+            "PERSONAL",
+            "QUANTIFIER",
+            "CARDINAL"
+          ]
+        },
+        "token_class": {
+          "type": "string",
+          "enum": [
+            "pronoun",
+            "determiner",
+            "quantifier",
+            "cardinal"
+          ]
+        },
+        "gender": {
+          "type": "string"
+        },
+        "case": {
+          "type": "string"
+        },
+        "surface_forms": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "usage_notes": {
+          "type": "string"
+        },
+        "examples": {
+          "type": "array",
+          "items": {
+            "$ref": "https://OpenUniLex.org/schemas/shared/igt_example/v1.0.0.igt_example.schema.json"
+          }
+        }
+      },
+      "required": [
+        "functional_scope",
+        "token_class",
+        "surface_forms"
+      ],
+      "additionalProperties": false
+    }
+  }
+}

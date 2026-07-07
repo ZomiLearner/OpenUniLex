@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://OpenUniLex.org/schemas/upos/verb/v1.0.0.verb.schema.json",
+  "type": "object",
+  "properties": {
+    "pos_payload": {
+      "type": "object",
+
+      "properties": {
+        "valency_frame": {
+          "$ref": "https://OpenUniLex.org/schemas/shared/valency_arguments/v1.0.0.valency_arguments.schema.json"
+        },
+        "stem_alternations": {
+          "type": "object",
+          "properties": {
+            "stem_i": {
+              "type": "string"
+            },
+            "stem_ii": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "stem_i"
+          ],
+          "additionalProperties": false
+        },
+        "examples": {
+          "type": "array",
+          "items": {
+            "$ref": "https://OpenUniLex.org/schemas/shared/igt_example/v1.0.0.igt_example.schema.json"
+          }
+        }
+      },
+      "required": [
+        "valency_frame",
+        "stem_alternations",
+        "examples"
+      ]
+    }
+  }
+}

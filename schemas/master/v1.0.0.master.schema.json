@@ -1,0 +1,225 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://OpenUniLex.org/schemas/master/v1.0.0.master.schema.json",
+  "title": "Lexicon Master Router",
+  "type": "object",
+  "properties": {
+    "$schema": {
+      "oneOf": [
+        {
+          "type": "string",
+          "description": "Single JSON Schema reference for validation (meta-property)"
+        },
+        {
+          "type": "array",
+          "description": "Multiple JSON Schema references for validation (meta-property)",
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        }
+      ]
+    },
+    "schemas": {
+      "type": "object",
+      "description": "Explicit schema references for different validation contexts",
+      "properties": {
+        "master": {
+          "type": "string",
+          "description": "Master schema reference"
+        },
+        "language": {
+          "type": "string",
+          "description": "Language-specific schema reference"
+        },
+        "pos": {
+          "type": "string",
+          "description": "POS-specific schema reference"
+        }
+      },
+      "additionalProperties": {
+        "type": "string"
+      }
+    },
+    "lemma": {
+      "$ref": "https://OpenUniLex.org/schemas/shared/base_properties/v1.0.0.base_properties.schema.json#/properties/lemma"
+    },
+    "upos": {
+      "$ref": "https://OpenUniLex.org/schemas/shared/base_properties/v1.0.0.base_properties.schema.json#/properties/upos"
+    },
+    "dialect_tag": {
+      "$ref": "https://OpenUniLex.org/schemas/shared/base_properties/v1.0.0.base_properties.schema.json#/properties/dialect_tag"
+    },
+    "gloss": {
+      "type": "string",
+      "description": "Default/Primary gloss for fast cross-referencing. Usually matches the first sense entry."
+    },
+    "semantic_domain": {
+      "description": "Primary SIL/Lexical semantic domain code fallback at root level.",
+      "$ref": "https://OpenUniLex.org/schemas/shared/base_properties/v1.0.0.base_properties.schema.json#/properties/semantic_domain"
+    },
+    "xpos": {
+      "$ref": "https://OpenUniLex.org/schemas/shared/base_properties/v1.0.0.base_properties.schema.json#/properties/xpos"
+    },
+    "metadata": {
+      "$ref": "https://OpenUniLex.org/schemas/shared/metadata/v1.0.0.metadata.schema.json"
+    },
+    "morph_type": {
+      "$ref": "https://OpenUniLex.org/schemas/shared/base_properties/v1.0.0.base_properties.schema.json#/properties/morph_type"
+    },
+    "feats": {
+      "description": "Morphological features - references language-specific schema which extends UD base",
+      "oneOf": [
+        {
+          "$ref": "https://OpenUniLex.org/schemas/language_specific/zol/v1.0.0.zol_features.schema.json#/properties/feats"
+        }
+      ]
+    },
+    "senses": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "sense_id",
+          "gloss",
+          "semantic_domain",
+          "valency"
+        ],
+        "properties": {
+          "sense_id": {
+            "type": "string"
+          },
+          "gloss": {
+            "type": "string"
+          },
+          "semantic_domain": {
+            "type": "string"
+          },
+          "valency": {
+            "$ref": "valency.schema.json"
+          },
+          "contextual_requirements": {
+            "type": [
+              "object",
+              "null"
+            ]
+          }
+        }
+      }
+    },
+    "pos_payload": {
+      "type": "object"
+    }
+  },
+  "required": [
+    "lemma",
+    "upos",
+    "dialect_tag",
+    "semantic_domain",
+    "morph_type",
+    "metadata",
+    "feats",
+    "pos_payload"
+  ],
+  "allOf": [
+    {
+      "$ref": "https://OpenUniLex.org/schemas/shared/base_properties/v1.0.0.base_properties.schema.json"
+    },
+    {
+      "if": {
+        "properties": {
+          "upos": {
+            "const": "VERB"
+          }
+        }
+      },
+      "then": {
+        "$ref": "https://OpenUniLex.org/schemas/upos/verb/v1.0.0.verb.schema.json"
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "upos": {
+            "enum": [
+              "NOUN",
+              "PROPN"
+            ]
+          }
+        }
+      },
+      "then": {
+        "$ref": "https://OpenUniLex.org/schemas/upos/noun/v1.0.0.noun.schema.json"
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "upos": {
+            "enum": [
+              "ADJ",
+              "ADV"
+            ]
+          }
+        }
+      },
+      "then": {
+        "$ref": "https://OpenUniLex.org/schemas/upos/modifier/v1.0.0.modifier.schema.json"
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "upos": {
+            "enum": [
+              "PRON",
+              "DET",
+              "NUM",
+              "ADP"
+            ]
+          }
+        }
+      },
+      "then": {
+        "$ref": "https://OpenUniLex.org/schemas/upos/functional/v1.0.0.functional.schema.json"
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "upos": {
+            "enum": [
+              "PART",
+              "AUX",
+              "CCONJ",
+              "SCONJ",
+              "INTJ"
+            ]
+          }
+        }
+      },
+      "then": {
+        "$ref": "https://OpenUniLex.org/schemas/upos/grammar_glue/v1.0.0.grammar_glue.schema.json"
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "upos": {
+            "enum": [
+              "PUNCT",
+              "SYM",
+              "X"
+            ]
+          }
+        }
+      },
+      "then": {
+        "$ref": "https://OpenUniLex.org/schemas/upos/structural_void/v1.0.0.structural_void.schema.json"
+      }
+    }
+  ],
+  "unevaluatedProperties": false
+}

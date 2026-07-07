@@ -1,0 +1,42 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://OpenUniLex.org/schemas/upos/noun/v1.0.0.noun.schema.json",
+	"properties": {
+		"pos_payload": {
+			"type": "object",
+			"properties": {
+				"derivation": {
+					"$ref": "https://OpenUniLex.org/schemas/shared/derivation/v1.0.0.derivation.schema.json"
+				},
+				"noun_class": {
+					"type": "string",
+					"enum": [
+						"ANIMATE",
+						"INANIMATE",
+						"ABSTRACT",
+						"COLLECTIVE"
+					]
+				},
+				"countability": {
+					"type": "string",
+					"enum": [
+						"COUNTABLE",
+						"MASS"
+					]
+				},
+				"examples": {
+					"type": "array",
+					"items": {
+						"$ref": "https://OpenUniLex.org/schemas/shared/igt_example/v1.0.0.igt_example.schema.json"
+					}
+				}
+			},
+			"required": [
+				"noun_class",
+				"countability",
+				"examples"
+			],
+			"additionalProperties": false
+		}
+	}
+}
