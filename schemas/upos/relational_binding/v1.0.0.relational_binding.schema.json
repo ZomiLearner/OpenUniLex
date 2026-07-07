@@ -1,0 +1,75 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://OpenUniLex.org/schemas/upos/relational/v1.0.0.relational_binding.schema.json",
+  "title": "Relational Binding Structural Schema",
+  "description": "Validates adpositions, coordinating conjunctions, and subordinating conjunctions (ADP, CCONJ, SCONJ) based on their syntactic attachment and binding functions.",
+  "type": "object",
+  "properties": {
+    "pos_payload": {
+      "type": "object",
+      "properties": {
+        "token_class": {
+          "type": "string",
+          "enum": [
+            "adposition",
+            "coordinating_conjunction",
+            "subordinating_conjunction"
+          ],
+          "description": "The functional lexical class corresponding to the token's UPOS tag."
+        },
+        "binding_type": {
+          "type": "string",
+          "enum": [
+            "CASE_MARKING",
+            "COORDINATING",
+            "SUBORDINATING",
+            "RELATIONAL_LINKER"
+          ],
+          "description": "The exact grammatical behavior used to tie syntactic units together."
+        },
+        "attachment_target": {
+          "type": "string",
+          "enum": [
+            "PREPOSITIONAL",
+            "POSTPOSITIONAL",
+            "LEFT_PHRASAL_BRANCH",
+            "RIGHT_PHRASAL_BRANCH"
+          ],
+          "description": "Linear position of the clitic/word relative to its immediate structural host."
+        },
+        "ud_deprel_default": {
+          "type": "string",
+          "enum": [
+            "case",
+            "cc",
+            "mark"
+          ],
+          "description": "The baseline Universal Dependencies dependency relation expected for this token class."
+        },
+        "surface_forms": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string"
+          },
+          "description": "All standard phonological/orthographic realizations or allomorphs of this item."
+        },
+        "structural_constraints": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Explicit rule sets or restrictions for phonological contraction, morphosyntactic behavior, or hosting limits."
+        }
+      },
+      "required": [
+        "token_class",
+        "binding_type",
+        "attachment_target",
+        "ud_deprel_default",
+        "surface_forms"
+      ],
+      "additionalProperties": false
+    }
+  }
+}
