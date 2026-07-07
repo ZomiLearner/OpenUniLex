@@ -1,0 +1,124 @@
+{
+	"$schema": "https://OpenUniLex.org/schemas/language_specific/zol/v1.0.0.zol_features.schema.json",
+	"lemma": "amahpa",
+	"upos": "PRON",
+	"dialect_tag": "STANDARD",
+	"gloss": "he",
+	"semantic_domain": "1.1.1_PRONOUN",
+	"xpos": "PRON",
+	"morph_type": "INFLECTIONAL",
+	"feats": {
+		"universal": {
+			"Person": "3",
+			"Number": "Sing",
+			"PronType": "Prs",
+			"Gender": "Masc"
+		},
+		"language_specific": {
+			"zol": {}
+		}
+	},
+	"senses": [
+		{
+			"sense_id": "amahpa_PRON_01_SENSE_01_SUBJ",
+			"gloss": "he (subjective)",
+			"semantic_domain": "1.1.1_PRONOUN",
+			"valency_frame": {
+				"valency_type": "nominal_argument",
+				"arguments": [
+					{
+						"role": "ARGUMENT",
+						"deprel": "nsubj",
+						"description": "Licenses distribution as a core nominal subject.",
+						"is_obligatory": true
+					}
+				]
+			},
+			"contextual_requirements": null,
+			"examples": [
+				{
+					"surface_text": "Amahpa pai hi.",
+					"english_translation": "He goes.",
+					"gloss_alignment": [
+						{
+							"token": "Amahpa",
+							"gloss": "he",
+							"upos_target": "PRON"
+						},
+						{
+							"token": "pai",
+							"gloss": "go",
+							"upos_target": "VERB"
+						},
+						{
+							"token": "hi",
+							"gloss": "ASSERT",
+							"upos_target": "PART"
+						}
+					]
+				}
+			]
+		},
+		{
+			"sense_id": "amahpa_PRON_01_SENSE_01_OBJ",
+			"gloss": "him (objective)",
+			"semantic_domain": "1.1.1_PRONOUN",
+			"valency_frame": {
+				"valency_type": "nominal_argument",
+				"arguments": [
+					{
+						"role": "ARGUMENT",
+						"deprel": "obj",
+						"description": "Licenses distribution as a core nominal direct object.",
+						"is_obligatory": true
+					}
+				]
+			},
+			"contextual_requirements": null,
+			"examples": [
+				{
+					"surface_text": "Amahpa mu ing.",
+					"english_translation": "I see him.",
+					"gloss_alignment": [
+						{
+							"token": "Amahpa",
+							"gloss": "him",
+							"upos_target": "PRON"
+						},
+						{
+							"token": "mu",
+							"gloss": "see",
+							"upos_target": "VERB"
+						},
+						{
+							"token": "ing",
+							"gloss": "1SG",
+							"upos_target": "PRON"
+						}
+					]
+				}
+			]
+		}
+	],
+	"pos_payload": {
+		"token_class": "pronoun",
+		"functional_scope": "PERSONAL",
+		"gender": "masculine",
+		"case": "default",
+		"surface_forms": [
+			"amahpa"
+		],
+		"usage_notes": "Third-person singular masculine pronoun meaning 'he'."
+	},
+	"metadata": {
+		"source": "zol lexicon",
+		"authors": [
+			"OpenUniLex"
+		],
+		"license": "CC-BY-SA-4.0",
+		"created_by": "OpenUniLex",
+		"created_at": "2026-07-07T10:30:00Z",
+		"status": "VALIDATED",
+		"version": 1
+	}
+}
