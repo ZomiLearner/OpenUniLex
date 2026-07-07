@@ -1,0 +1,87 @@
+{
+  "$schema": "https://OpenUniLex.org/schemas/language_specific/zol/v1.0.0.zol_features.schema.json",
+  "lemma": "leh",
+  "upos": "CCONJ",
+  "dialect_tag": "UNIVERSAL",
+  "semantic_domain": "3.5.1.4",
+  "morph_type": "NONE",
+  "xpos": "CCONJ",
+  "feats": {
+    "universal": {},
+    "language_specific": {
+      "zol": {}
+    }
+  },
+  "senses": [
+    {
+      "sense_id": "leh_CCONJ_01_SENSE_01_COORD",
+      "gloss": "and",
+      "semantic_domain": "3.5.1.4",
+      "valency_frame": {
+        "valency_type": "coordination",
+        "arguments": [
+          {
+            "role": "MARKER",
+            "deprel": "cc",
+            "description": "Links coordinate noun phrases, modifiers, or independent clausal projections in an additive structure.",
+            "is_obligatory": true
+          }
+        ]
+      },
+      "contextual_requirements": {
+        "preceding_element": {
+          "note": "Accepts phrases or clauses forming the initial conjunct."
+        },
+        "following_element": {
+          "note": "Accepts phrases or clauses forming the subsequent conjunct."
+        }
+      },
+      "examples": [
+        {
+          "surface_text": "Amaute in buhsih leh aksa a ne uh hi.",
+          "english_translation": "They ate sticky rice and chicken.",
+          "gloss_alignment": [
+            { "token": "Amaute", "morphemes": ["ama", "-ute"], "gloss": "they", "upos_target": "PRON" },
+            { "token": "in", "morphemes": ["in"], "gloss": "ERG", "upos_target": "ADP" },
+            { "token": "buhsih", "morphemes": ["buhsih"], "gloss": "sticky_rice", "upos_target": "NOUN" },
+            { "token": "leh", "morphemes": ["leh"], "gloss": "and", "upos_target": "CCONJ" },
+            { "token": "aksa", "morphemes": ["aksa"], "gloss": "chicken", "upos_target": "NOUN" },
+            { "token": "a", "morphemes": ["a"], "gloss": "3.AGR", "upos_target": "PRON" },
+            { "token": "ne", "morphemes": ["ne"], "gloss": "eat.StemI", "upos_target": "VERB" },
+            { "token": "uh", "morphemes": ["uh"], "gloss": "PL", "upos_target": "PART" },
+            { "token": "hi", "morphemes": ["hi"], "gloss": "ASSERT", "upos_target": "PART" }
+          ],
+          "external_links": {
+            "ili_id": "",
+            "verbnet_class": ""
+          }
+        }
+      ]
+    }
+  ],
+  "pos_payload": {
+    "token_class": "coordinating_conjunction",
+    "binding_type": "COORDINATING",
+    "attachment_target": "LEFT_PHRASAL_BRANCH",
+    "ud_deprel_default": "cc",
+    "surface_forms": [
+      "leh"
+    ],
+    "structural_constraints": [
+      "Introduces the subsequent conjunct within a coordinate construction.",
+      "In treebank graph parsing, attaches via 'cc' to the following conjunct head node."
+    ]
+  },
+  "metadata": {
+    "source": "Zomi NLP Core Treebank Projects",
+    "authors": [
+      "zomi-nlp-engine-team"
+    ],
+    "license": "MIT",
+    "created_by": "automated_parser_v0.4.0",
+    "created_at": "2026-07-07T22:30:00Z",
+    "status": "VALIDATED",
+    "ud_compliant": true,
+    "version": 1
+  }
+}
