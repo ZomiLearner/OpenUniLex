@@ -23,7 +23,7 @@
   },
   "senses": [
     {
-      "sense_id": "pai_VERB_1.SENSE.1",
+      "sense_id": "pai_VERB_01_SENSE_01",
       "gloss": "go",
       "semantic_domain": "7.2.1.1",
       "valency_frame": {
@@ -96,7 +96,7 @@
       ]
     },
     {
-      "sense_id": "pai_VERB_1.SENSE.2",
+      "sense_id": "pai_VERB_01_SENSE_02",
       "gloss": "come",
       "semantic_domain": "7.2.3.1",
       "valency_frame": {
