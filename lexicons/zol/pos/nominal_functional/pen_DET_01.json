@@ -1,0 +1,87 @@
+{
+  "$schema": "https://OpenUniLex.org/schemas/language_specific/zol/v1.0.0.zol_features.schema.json",
+  "lemma": "pen",
+  "upos": "DET",
+  "dialect_tag": "UNIVERSAL",
+  "semantic_domain": "3.5.1.3",
+  "morph_type": "NONE",
+  "xpos": "DET",
+  "feats": {
+    "universal": {
+      "PronType": "Dem"
+    },
+    "language_specific": {
+      "zol": {}
+    }
+  },
+  "senses": [
+    {
+      "sense_id": "pen_DET_01_SENSE_01_TOP",
+      "gloss": "the / this (topicalizing determiner)",
+      "semantic_domain": "3.5.1.3",
+      "valency_frame": {
+        "valency_type": "nominal_modifier",
+        "arguments": [
+          {
+            "role": "MODIFIER",
+            "deprel": "det",
+            "description": "Attaches postpositionally to a noun phrase or pronoun to define specificity and mark the phrase as the topicalized subject.",
+            "is_obligatory": true
+          }
+        ]
+      },
+      "contextual_requirements": {
+        "preceding_element": {
+          "upos": "PRON",
+          "note": "Accepts nominal hosts, including third-person plural pronouns like 'Amaute'."
+        },
+        "following_element": {
+          "note": "Typically followed by a possessive construction or a nominal predicate phrase leading into a copula."
+        }
+      },
+      "examples": [
+        {
+          "surface_text": "Amaute pen ka innkuanpihte ahi uh hi.",
+          "english_translation": "They are my family members.",
+          "gloss_alignment": [
+            { "token": "Amaute", "morphemes": ["ama", "-ute"], "gloss": "they", "upos_target": "PRON" },
+            { "token": "pen", "morphemes": ["pen"], "gloss": "TOP", "upos_target": "DET" },
+            { "token": "ka", "morphemes": ["ka"], "gloss": "1SG.POSS", "upos_target": "PRON" },
+            { "token": "innkuanpihte", "morphemes": ["innkuan", "-pih", "-te"], "gloss": "family_member.PL", "upos_target": "NOUN" },
+            { "token": "ahi", "morphemes": ["ahi"], "gloss": "be", "upos_target": "AUX" },
+            { "token": "uh", "morphemes": ["uh"], "gloss": "PL", "upos_target": "PART" },
+            { "token": "hi", "morphemes": ["hi"], "gloss": "ASSERT", "upos_target": "PART" }
+          ],
+          "external_links": {
+            "ili_id": "",
+            "verbnet_class": ""
+          }
+        }
+      ]
+    }
+  ],
+  "pos_payload": {
+    "functional_scope": "DEICTIC",
+    "token_class": "determiner",
+    "surface_forms": [
+      "pen"
+    ],
+    "usage_notes": "Functions as a specifier that singles out the preceding nominal phrase as the focus or topic of the clause.",
+    "structural_constraints": [
+      "Attaches strictly to the right edge of the targeted noun phrase projection.",
+      "In Universal Dependencies parsing, it projects a 'det' relation back to the head noun or pronoun ('Amaute') which serves as the core 'nsubj' of the copula predicate."
+    ]
+  },
+  "metadata": {
+    "source": "Zomi NLP Core Treebank Projects",
+    "authors": [
+      "zomi-nlp-engine-team"
+    ],
+    "license": "MIT",
+    "created_by": "automated_parser_v0.4.0",
+    "created_at": "2026-07-08T00:45:00Z",
+    "status": "VALIDATED",
+    "ud_compliant": true,
+    "version": 1
+  }
+}
