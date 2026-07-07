@@ -31,7 +31,6 @@ OpenUniLex/
 │   ├── shared/
 │   │   ├── base_properties/
 │   │   ├── metadata/
-│   │   ├── ud_morphology/
 │   │   ├── valency_arguments/
 │   │   └── igt_example/
 │   │
