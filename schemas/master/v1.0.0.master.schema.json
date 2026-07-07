@@ -85,7 +85,8 @@
           "sense_id",
           "gloss",
           "semantic_domain",
-          "valency_frame"
+          "valency_frame",
+          "examples"
         ],
         "properties": {
           "sense_id": {
@@ -105,6 +106,13 @@
               "object",
               "null"
             ]
+          },
+          "examples": {
+            "type": "array",
+            "description": "Targeted context sentences showing this specific sense and its associated valency frame in action.",
+            "items": {
+              "$ref": "https://OpenUniLex.org/schemas/shared/igt_example/v1.0.0.igt_example.schema.json"
+            }
           }
         }
       }

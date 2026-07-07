@@ -41,7 +41,59 @@
           }
         ]
       },
-      "contextual_requirements": null
+      "contextual_requirements": null,
+      "examples": [
+        {
+          "surface_text": "Kalaymyo ah ka pai hi.",
+          "english_translation": "I go to Kalaymyo.",
+          "gloss_alignment": [
+            {
+              "token": "Kalaymyo",
+              "morphemes": [
+                "Kalaymyo"
+              ],
+              "gloss": "Kalaymyo",
+              "upos_target": "PROPN"
+            },
+            {
+              "token": "ah",
+              "morphemes": [
+                "ah"
+              ],
+              "gloss": "LOC",
+              "upos_target": "ADP"
+            },
+            {
+              "token": "ka",
+              "morphemes": [
+                "ka"
+              ],
+              "gloss": "1SG.SUBJ",
+              "upos_target": "PRON"
+            },
+            {
+              "token": "pai",
+              "morphemes": [
+                "pai"
+              ],
+              "gloss": "go.StemI",
+              "upos_target": "VERB"
+            },
+            {
+              "token": "hi",
+              "morphemes": [
+                "hi"
+              ],
+              "gloss": "DECL",
+              "upos_target": "PART"
+            }
+          ],
+          "external_links": {
+            "ili_id": "i26941",
+            "verbnet_class": "escape-51.1"
+          }
+        }
+      ]
     },
     {
       "sense_id": "PAI_VERB_1.SENSE.2",
@@ -75,121 +127,70 @@
           "nong"
         ],
         "description": "Triggered exclusively via composition with deictic direction particles pointing toward the speaker or listener."
-      }
+      },
+      "examples": [
+        {
+          "surface_text": "Inndei pen ah hong pai in!",
+          "english_translation": "Come to the room!",
+          "gloss_alignment": [
+            {
+              "token": "Inndei",
+              "morphemes": [
+                "inn",
+                "dei"
+              ],
+              "gloss": "room",
+              "upos_target": "NOUN"
+            },
+            {
+              "token": "pen",
+              "morphemes": [
+                "pen"
+              ],
+              "gloss": "DEF",
+              "upos_target": "DET"
+            },
+            {
+              "token": "ah",
+              "morphemes": [
+                "ah"
+              ],
+              "gloss": "LOC",
+              "upos_target": "ADP"
+            },
+            {
+              "token": "hong",
+              "morphemes": [
+                "hong"
+              ],
+              "gloss": "DIR.TO_SPEAKER",
+              "upos_target": "PART"
+            },
+            {
+              "token": "pai",
+              "morphemes": [
+                "pai"
+              ],
+              "gloss": "go.StemI",
+              "upos_target": "VERB"
+            },
+            {
+              "token": "in",
+              "morphemes": [
+                "in"
+              ],
+              "gloss": "IMP",
+              "upos_target": "PART"
+            }
+          ]
+        }
+      ]
     }
   ],
   "pos_payload": {
-    
     "stem_alternations": {
       "stem_i": "pai"
-    },
-    "examples": [
-      {
-        "surface_text": "Kalaymyo ah ka pai hi.",
-        "english_translation": "I go to Kalaymyo.",
-        "gloss_alignment": [
-          {
-            "token": "Kalaymyo",
-            "morphemes": [
-              "Kalaymyo"
-            ],
-            "gloss": "Kalaymyo",
-            "upos_target": "PROPN"
-          },
-          {
-            "token": "ah",
-            "morphemes": [
-              "ah"
-            ],
-            "gloss": "LOC",
-            "upos_target": "ADP"
-          },
-          {
-            "token": "ka",
-            "morphemes": [
-              "ka"
-            ],
-            "gloss": "1SG.SUBJ",
-            "upos_target": "PRON"
-          },
-          {
-            "token": "pai",
-            "morphemes": [
-              "pai"
-            ],
-            "gloss": "go.StemI",
-            "upos_target": "VERB"
-          },
-          {
-            "token": "hi",
-            "morphemes": [
-              "hi"
-            ],
-            "gloss": "DECL",
-            "upos_target": "PART"
-          }
-        ],
-        "external_links": {
-          "ili_id": "i26941",
-          "verbnet_class": "escape-51.1"
-        }
-      },
-      {
-        "surface_text": "Inndei pen ah hong pai in!",
-        "english_translation": "Come to the room!",
-        "gloss_alignment": [
-          {
-            "token": "Inndei",
-            "morphemes": [
-              "inn",
-              "dei"
-            ],
-            "gloss": "room",
-            "upos_target": "NOUN"
-          },
-          {
-            "token": "pen",
-            "morphemes": [
-              "pen"
-            ],
-            "gloss": "DEF",
-            "upos_target": "DET"
-          },
-          {
-            "token": "ah",
-            "morphemes": [
-              "ah"
-            ],
-            "gloss": "LOC",
-            "upos_target": "ADP"
-          },
-          {
-            "token": "hong",
-            "morphemes": [
-              "hong"
-            ],
-            "gloss": "DIR.TO_SPEAKER",
-            "upos_target": "PART"
-          },
-          {
-            "token": "pai",
-            "morphemes": [
-              "pai"
-            ],
-            "gloss": "go.StemI",
-            "upos_target": "VERB"
-          },
-          {
-            "token": "in",
-            "morphemes": [
-              "in"
-            ],
-            "gloss": "IMP",
-            "upos_target": "PART"
-          }
-        ]
-      }
-    ]
+    }
   },
   "metadata": {
     "source": "Zomi NLP Core Treebank Projects",

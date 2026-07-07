@@ -5,7 +5,6 @@
   "properties": {
     "pos_payload": {
       "type": "object",
-
       "properties": {
         "stem_alternations": {
           "type": "object",
@@ -21,17 +20,10 @@
             "stem_i"
           ],
           "additionalProperties": false
-        },
-        "examples": {
-          "type": "array",
-          "items": {
-            "$ref": "https://OpenUniLex.org/schemas/shared/igt_example/v1.0.0.igt_example.schema.json"
-          }
         }
       },
       "required": [
-        "stem_alternations",
-        "examples"
+        "stem_alternations"
       ]
     }
   }
