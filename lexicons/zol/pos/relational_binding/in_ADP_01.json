@@ -116,13 +116,14 @@
             },
             "examples": [
                 {
-                    "surface_text": "Heam in at hu.",
+                    "surface_text": "Temta in at in.",
                     "english_translation": "Cut it with a knife.",
                     "gloss_alignment": [
                         {
-                            "token": "Heam",
+                            "token": "Temta",
                             "morphemes": [
-                                "heam"
+                                "tem",
+                                "ta"
                             ],
                             "gloss": "knife",
                             "upos_target": "NOUN"
@@ -144,9 +145,9 @@
                             "upos_target": "VERB"
                         },
                         {
-                            "token": "hu",
+                            "token": "in",
                             "morphemes": [
-                                "hu"
+                                "in"
                             ],
                             "gloss": "IMP",
                             "upos_target": "PART"
