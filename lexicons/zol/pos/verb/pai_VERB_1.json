@@ -182,7 +182,11 @@
               "gloss": "IMP",
               "upos_target": "PART"
             }
-          ]
+          ],
+          "external_links": {
+            "ili_id": "i26941",
+            "verbnet_class": "come-51.3.2"
+          }
         }
       ]
     }
