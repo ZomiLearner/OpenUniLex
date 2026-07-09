@@ -38,7 +38,7 @@
     },
     "parallel_sentence": {
       "versions": {
-        "1": "schemas/shared/parallel_sentence/v1.0.0.parallel.schema.json"
+        "1": "schemas/shared/parallel_sentence/v1.0.0.parallel_sentence.schema.json"
       },
       "default": "1"
     },
