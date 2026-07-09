@@ -19,6 +19,7 @@
             "COPULA",
             "ASSERTION",
             "INTERROGATIVE",
+            "CLAUSE",
             "DISCOURSE_EMOTIVE"
           ],
           "description": "The specific semantic or clausal category modified by this token."
@@ -40,6 +41,7 @@
             "SENTENCE_FINAL",
             "POST_PREDICATIVE",
             "NOUN_BOUND",
+            "PREDICATE",
             "ISOLATED"
           ],
           "description": "Linear placement constraint of the token relative to its clausal or lexical host expression."
