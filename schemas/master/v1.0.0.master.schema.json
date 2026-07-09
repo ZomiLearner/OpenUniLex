@@ -86,7 +86,6 @@
           "gloss",
           "semantic_domain",
           "valency_frame",
-          "parallel_sentences",
           "examples"
         ],
         "properties": {
