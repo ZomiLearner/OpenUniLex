@@ -43,6 +43,7 @@ htmlcov/
 # Generated artifacts (if any)
 tools/**/output/
 tools/**/generated/
+schemas/index.json
 
 # Miscellaneous works/files
 workspace
