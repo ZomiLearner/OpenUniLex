@@ -38,6 +38,13 @@
                   "type": "string",
                   "enum": ["Assoc"]
                 },
+                "VerbType": {
+                  "description": "Verb type in Zomi",
+                  "type": "string",
+                  "enum": [
+                    "Cop"
+                  ]
+                },
                 "PolarityParticle": {
                   "description": "Polarity particle types",
                   "type": "string",
