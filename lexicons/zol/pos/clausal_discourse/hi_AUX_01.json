@@ -1,0 +1,108 @@
+{
+  "$schema": "https://OpenUniLex.org/schemas/language_specific/zol/v1.0.0.zol_features.schema.json",
+  "lemma": "hi",
+  "upos": "AUX",
+  "xpos": "V_COP",
+  "dialect_tag": "UNIVERSAL",
+  "gloss": "be",
+  "semantic_domain": "9.3_RELATION",
+  "morph_type": "INFLECTIONAL",
+  "feats": {
+    "universal": {
+      "VerbForm": "Fin"
+    },
+    "language_specific": {
+      "zol": {
+        "VerbType": "Cop"
+      }
+    }
+  },
+  "senses": [
+    {
+      "sense_id": "hi_AUX_01_SENSE_01_COPULA",
+      "gloss": "be",
+      "semantic_domain": "9.3",
+      "valency_frame": {
+        "valency_type": "avalent",
+        "arguments": [
+          {
+            "role": "THEME",
+            "deprel": "nsubj",
+            "description": "The nominal subject entity. Under UD guidelines, this will be a dependent of the predicate nominal, not this auxiliary.",
+            "is_obligatory": true
+          }
+        ]
+      },
+      "contextual_requirements": {
+        "preceding_element": {
+          "upos": "PRON",
+          "note": "Preceded directly by agreement-marking pronominal subject clitics ('ka', 'na', 'ih', 'a')."
+        },
+        "structural_chain": {
+          "linear_sequence": ["NOUN", "PRON", "AUX", "PART"],
+          "description": "Standard equative frame: a predicate noun head is modified by a subject clitic, the copular auxiliary 'hi', and closed by the clause-final declarative particle 'hi'."
+        }
+      },
+      "examples": [
+        {
+          "surface_text": "Zomi ka hi hi.",
+          "english_translation": "I am Zomi.",
+          "gloss_alignment": [
+            {
+              "token": "Zomi",
+              "morphemes": ["Zomi"],
+              "gloss": "Zomi",
+              "upos_target": "NOUN"
+            },
+            {
+              "token": "ka",
+              "morphemes": ["ka"],
+              "gloss": "1SG.SUBJ",
+              "upos_target": "PRON"
+            },
+            {
+              "token": "hi",
+              "morphemes": ["hi"],
+              "gloss": "be.copula",
+              "upos_target": "AUX"
+            },
+            {
+              "token": "hi",
+              "morphemes": ["hi"],
+              "gloss": "DECL",
+              "upos_target": "PART"
+            }
+          ],
+          "external_links": {
+            "ud_deprel": "cop"
+          }
+        }
+      ]
+    }
+  ],
+  "pos_payload": {
+    "token_class": "auxiliary",
+    "functional_scope": "CLAUSE",
+    "attachment_target": "PREDICATE",
+    "ud_deprel_default": "cop",
+    "surface_forms": [
+      "hi"
+    ],
+    "structural_constraints": [
+      "ACTS_AS_DEPENDENT_COP_OF_NON_VERBAL_PREDICATE"
+    ]
+  },
+  "metadata": {
+    "source": "Zomi NLP Core Treebank Projects",
+    "authors": [
+      "zomi-nlp-engine-team",
+      "OpenUniLex"
+    ],
+    "license": "CC-BY-SA-4.0",
+    "created_by": "linguist_team",
+    "created_at": "2026-07-09T20:30:00Z",
+    "status": "VALIDATED",
+    "ud_compliant": true,
+    "version": 2
+  }
+}
