@@ -86,6 +86,7 @@
           "gloss",
           "semantic_domain",
           "valency_frame",
+          "parallel_sentences",
           "examples"
         ],
         "properties": {
@@ -106,6 +107,13 @@
               "object",
               "null"
             ]
+          },
+          "parallel_sentences": {
+            "type": "array",
+            "description": "",
+            "items": {
+              "$ref": "https://OpenUniLex.org/schemas/shared/parallel_sentence/v1.0.0.parallel_sentence.schema.json"
+            }
           },
           "examples": {
             "type": "array",

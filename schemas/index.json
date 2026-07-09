@@ -36,6 +36,12 @@
       },
       "default": "1"
     },
+    "parallel_sentence": {
+      "versions": {
+        "1": "schemas/shared/parallel_sentence/v1.0.0.parallel.schema.json"
+      },
+      "default": "1"
+    },
     "ud_deprels": {
       "versions": {
         "1": "schemas/shared/ud_deprels/v1.0.0.ud_dreprels.schema.json"

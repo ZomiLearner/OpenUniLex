@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://OpenUniLex.org/schemas/shared/parallel_sentence/v1.0.0.parallel_sentence.schema.json",
+  "title": "Parallel Sentence Entry",
+  "description": "A schema describing a single parallel sentence entry for multilingual NLP tasks.",
+  "type": "object",
+  "patternProperties": {
+    "^[a-z]+$": {
+      "type": "string",
+      "description": "Sentence in the specified language"
+    }
+  },
+  "additionalProperties": false
+}
