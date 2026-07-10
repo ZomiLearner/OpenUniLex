@@ -37,28 +37,11 @@
 				]
 			},
 			"contextual_requirements": null,
-			"examples": [
+			"parallel_sentences": [
 				{
-					"surface_text": "Amaute pai hi.",
-					"english_translation": "They go.",
-					"gloss_alignment": [
-						{
-							"token": "Amaute",
-							"gloss": "they",
-							"upos_target": "PRON"
-						},
-						{
-							"token": "pai",
-							"gloss": "go",
-							"upos_target": "VERB"
-						},
-						{
-							"token": "hi",
-							"gloss": "ASSERT",
-							"upos_target": "PART"
-						}
-					]
-				}
+					"zol": "Amaute pai kik uh hi.",
+					"en": "They go back."
+				}	
 			]
 		},
 		{
@@ -77,48 +60,14 @@
 				]
 			},
 			"contextual_requirements": null,
-			"examples": [
+			"parallel_sentences": [
 				{
-					"surface_text": "Amaute mu ing.",
-					"english_translation": "I see them.",
-					"gloss_alignment": [
-						{
-							"token": "Amaute",
-							"gloss": "them",
-							"upos_target": "PRON"
-						},
-						{
-							"token": "mu",
-							"gloss": "see",
-							"upos_target": "VERB"
-						},
-						{
-							"token": "ing",
-							"gloss": "1SG",
-							"upos_target": "PRON"
-						}
-					]
+					"zol": "Amaute ka mu ngei khin hi.",
+					"en": "I had seen them."
 				},
 				{
-					"surface_text": "Amaute huh in.",
-					"english_translation": "Help them.",
-					"gloss_alignment": [
-						{
-							"token": "Amaute",
-							"gloss": "them",
-							"upos_target": "PRON"
-						},
-						{
-							"token": "huh",
-							"gloss": "help",
-							"upos_target": "VERB"
-						},
-						{
-							"token": "in",
-							"gloss": "IMP",
-							"upos_target": "PART"
-						}
-					]
+					"zol": "Amaute ka huh khin ta hi.",
+					"en": "I just helped them."
 				}
 			]
 		}

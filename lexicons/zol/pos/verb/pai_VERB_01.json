@@ -42,57 +42,8 @@
         ]
       },
       "contextual_requirements": null,
-      "examples": [
-        {
-          "surface_text": "Kalaymyo ah ka pai hi.",
-          "english_translation": "I go to Kalaymyo.",
-          "gloss_alignment": [
-            {
-              "token": "Kalaymyo",
-              "morphemes": [
-                "Kalaymyo"
-              ],
-              "gloss": "Kalaymyo",
-              "upos_target": "PROPN"
-            },
-            {
-              "token": "ah",
-              "morphemes": [
-                "ah"
-              ],
-              "gloss": "LOC",
-              "upos_target": "ADP"
-            },
-            {
-              "token": "ka",
-              "morphemes": [
-                "ka"
-              ],
-              "gloss": "1SG.SUBJ",
-              "upos_target": "PRON"
-            },
-            {
-              "token": "pai",
-              "morphemes": [
-                "pai"
-              ],
-              "gloss": "go.StemI",
-              "upos_target": "VERB"
-            },
-            {
-              "token": "hi",
-              "morphemes": [
-                "hi"
-              ],
-              "gloss": "DECL",
-              "upos_target": "PART"
-            }
-          ],
-          "external_links": {
-            "ili_id": "i26941",
-            "verbnet_class": "escape-51.1"
-          }
-        }
+      "parallel_sentences": [
+        { "zol": "Kalaymyo ah ka pai hi.", "en": "I go to Kalaymyo." }
       ]
     },
     {
@@ -128,66 +79,8 @@
         ],
         "description": "Triggered exclusively via composition with deictic direction particles pointing toward the speaker or listener."
       },
-      "examples": [
-        {
-          "surface_text": "Inndei pen ah hong pai in!",
-          "english_translation": "Come to the room!",
-          "gloss_alignment": [
-            {
-              "token": "Inndei",
-              "morphemes": [
-                "inn",
-                "dei"
-              ],
-              "gloss": "room",
-              "upos_target": "NOUN"
-            },
-            {
-              "token": "pen",
-              "morphemes": [
-                "pen"
-              ],
-              "gloss": "DEF",
-              "upos_target": "DET"
-            },
-            {
-              "token": "ah",
-              "morphemes": [
-                "ah"
-              ],
-              "gloss": "LOC",
-              "upos_target": "ADP"
-            },
-            {
-              "token": "hong",
-              "morphemes": [
-                "hong"
-              ],
-              "gloss": "DIR.TO_SPEAKER",
-              "upos_target": "PART"
-            },
-            {
-              "token": "pai",
-              "morphemes": [
-                "pai"
-              ],
-              "gloss": "go.StemI",
-              "upos_target": "VERB"
-            },
-            {
-              "token": "in",
-              "morphemes": [
-                "in"
-              ],
-              "gloss": "IMP",
-              "upos_target": "PART"
-            }
-          ],
-          "external_links": {
-            "ili_id": "i26941",
-            "verbnet_class": "come-51.3.2"
-          }
-        }
+      "parallel_sentences": [
+        { "zol": "Inndei pen ah hong pai in!", "en": "Come to the room!" }
       ]
     }
   ],

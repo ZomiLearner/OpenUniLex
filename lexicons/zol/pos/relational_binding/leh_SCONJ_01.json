@@ -36,28 +36,8 @@
           "note": "Followed by the matrix/apodosis clause specifying the consequence."
         }
       },
-      "examples": [
-        {
-          "surface_text": "Amaute in a thukim uh leh ih zom ding uh hi.",
-          "english_translation": "If they agree, we will proceed.",
-          "gloss_alignment": [
-            { "token": "Amaute", "morphemes": ["ama", "-ute"], "gloss": "they", "upos_target": "PRON" },
-            { "token": "in", "morphemes": ["in"], "gloss": "ERG", "upos_target": "ADP" },
-            { "token": "a", "morphemes": ["a"], "gloss": "3.AGR", "upos_target": "PRON" },
-            { "token": "thukim", "morphemes": ["thukim"], "gloss": "agree", "upos_target": "VERB" },
-            { "token": "uh", "morphemes": ["uh"], "gloss": "PL", "upos_target": "PART" },
-            { "token": "leh", "morphemes": ["leh"], "gloss": "if", "upos_target": "SCONJ" },
-            { "token": "ih", "morphemes": ["ih"], "gloss": "1.PL.AGR", "upos_target": "PRON" },
-            { "token": "zom", "morphemes": ["zom"], "gloss": "continue", "upos_target": "VERB" },
-            { "token": "ding", "morphemes": ["ding"], "gloss": "FUT", "upos_target": "AUX" },
-            { "token": "uh", "morphemes": ["uh"], "gloss": "PL", "upos_target": "PART" },
-            { "token": "hi", "morphemes": ["hi"], "gloss": "ASSERT", "upos_target": "PART" }
-          ],
-          "external_links": {
-            "ili_id": "",
-            "verbnet_class": ""
-          }
-        }
+      "parallel_sentences": [
+        { "zol": "Amaute in a thukim uh leh ih zom ding uh hi.", "en": "If they agree, we will proceed." }
       ]
     }
   ],

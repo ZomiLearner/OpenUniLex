@@ -35,16 +35,8 @@
         ]
       },
       "contextual_requirements": null,
-      "examples": [
-        {
-          "surface_text": "Amahnu pai hi.",
-          "english_translation": "She goes.",
-          "gloss_alignment": [
-            { "token": "Amahnu", "gloss": "she", "upos_target": "PRON" },
-            { "token": "pai", "gloss": "go", "upos_target": "VERB" },
-            { "token": "hi", "gloss": "ASSERT", "upos_target": "PART" }
-          ]
-        }
+      "parallel_sentences": [
+        { "zol": "Amahnu pai khia hi.", "en": "She goes out." }
       ]
     },
     {
@@ -63,16 +55,8 @@
         ]
       },
       "contextual_requirements": null,
-      "examples": [
-        {
-          "surface_text": "Amahnu mu ing.",
-          "english_translation": "I see her.",
-          "gloss_alignment": [
-            { "token": "Amahnu", "gloss": "her", "upos_target": "PRON" },
-            { "token": "mu", "gloss": "see", "upos_target": "VERB" },
-            { "token": "ing", "gloss": "1SG", "upos_target": "PRON" }
-          ]
-        }
+      "parallel_sentences": [
+        { "zol": "Amahnu mu ngei ing.", "en": "I have seen her." }
       ]
     }
   ],

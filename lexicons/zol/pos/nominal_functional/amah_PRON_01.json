@@ -34,17 +34,10 @@
           }
         ]
       },
+
       "contextual_requirements": null,
-      "examples": [
-        {
-          "surface_text": "Amah pai hi.",
-          "english_translation": "He/She/It goes.",
-          "gloss_alignment": [
-            { "token": "Amah", "gloss": "he/she/it", "upos_target": "PRON" },
-            { "token": "pai", "gloss": "go", "upos_target": "VERB" },
-            { "token": "hi", "gloss": "ASSERT", "upos_target": "PART" }
-          ]
-        }
+      "parallel_sentences": [
+        { "zol": "Amah pai hi.", "en": "He/She/It goes." }
       ]
     },
     {
@@ -63,16 +56,8 @@
         ]
       },
       "contextual_requirements": null,
-      "examples": [
-        {
-          "surface_text": "Amah mu ing.",
-          "english_translation": "I see him/her/it.",
-          "gloss_alignment": [
-            { "token": "Amah", "gloss": "him/her/it", "upos_target": "PRON" },
-            { "token": "mu", "gloss": "see", "upos_target": "VERB" },
-            { "token": "ing", "gloss": "1SG", "upos_target": "PRON" }
-          ]
-        }
+      "parallel_sentences": [
+        { "zol": "Amah mu ing.", "en": "I see him/her/it." }
       ]
     }
   ],

@@ -36,66 +36,8 @@
           "note": "Sits directly after the noun head to denote sequence order (e.g., 'laibu khatna' = the first book)."
         }
       },
-      "examples": [
-        {
-          "surface_text": "Hih pen laibu khatna ahi hi.",
-          "english_translation": "This is the first book.",
-          "gloss_alignment": [
-            {
-              "token": "Hih",
-              "morphemes": [
-                "hih"
-              ],
-              "gloss": "this",
-              "upos_target": "DET"
-            },
-            {
-              "token": "pen",
-              "morphemes": [
-                "pen"
-              ],
-              "gloss": "TOP",
-              "upos_target": "PART"
-            },
-            {
-              "token": "laibu",
-              "morphemes": [
-                "laibu"
-              ],
-              "gloss": "book",
-              "upos_target": "NOUN"
-            },
-            {
-              "token": "khatna",
-              "morphemes": [
-                "khat",
-                "-na"
-              ],
-              "gloss": "first",
-              "upos_target": "NUM"
-            },
-            {
-              "token": "ahi",
-              "morphemes": [
-                "ahi"
-              ],
-              "gloss": "be",
-              "upos_target": "AUX"
-            },
-            {
-              "token": "hi",
-              "morphemes": [
-                "hi"
-              ],
-              "gloss": "ASSERT",
-              "upos_target": "PART"
-            }
-          ],
-          "external_links": {
-            "ili_id": "",
-            "verbnet_class": ""
-          }
-        }
+      "parallel_sentences": [
+        { "zol": "Hih pen laibu khatna ahi hi.", "en": "This is the first book." }
       ]
     }
   ],

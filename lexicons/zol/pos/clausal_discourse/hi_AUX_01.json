@@ -43,40 +43,8 @@
           "description": "Standard equative frame: a predicate noun head is modified by a subject clitic, the copular auxiliary 'hi', and closed by the clause-final declarative particle 'hi'."
         }
       },
-      "examples": [
-        {
-          "surface_text": "Zomi ka hi hi.",
-          "english_translation": "I am Zomi.",
-          "gloss_alignment": [
-            {
-              "token": "Zomi",
-              "morphemes": ["Zomi"],
-              "gloss": "Zomi",
-              "upos_target": "NOUN"
-            },
-            {
-              "token": "ka",
-              "morphemes": ["ka"],
-              "gloss": "1SG.SUBJ",
-              "upos_target": "PRON"
-            },
-            {
-              "token": "hi",
-              "morphemes": ["hi"],
-              "gloss": "be.copula",
-              "upos_target": "AUX"
-            },
-            {
-              "token": "hi",
-              "morphemes": ["hi"],
-              "gloss": "DECL",
-              "upos_target": "PART"
-            }
-          ],
-          "external_links": {
-            "ud_deprel": "cop"
-          }
-        }
+      "parallel_sentences": [
+        { "zol": "Zomi ka hi hi.", "en": "I am Zomi." }
       ]
     }
   ],

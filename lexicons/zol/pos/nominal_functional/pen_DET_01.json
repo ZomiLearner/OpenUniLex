@@ -39,24 +39,8 @@
           "note": "Typically followed by a possessive construction or a nominal predicate phrase leading into a copula."
         }
       },
-      "examples": [
-        {
-          "surface_text": "Amaute pen ka innkuanpihte ahi uh hi.",
-          "english_translation": "They are my family members.",
-          "gloss_alignment": [
-            { "token": "Amaute", "morphemes": ["ama", "-ute"], "gloss": "they", "upos_target": "PRON" },
-            { "token": "pen", "morphemes": ["pen"], "gloss": "TOP", "upos_target": "DET" },
-            { "token": "ka", "morphemes": ["ka"], "gloss": "1SG.POSS", "upos_target": "PRON" },
-            { "token": "innkuanpihte", "morphemes": ["innkuan", "-pih", "-te"], "gloss": "family_member.PL", "upos_target": "NOUN" },
-            { "token": "ahi", "morphemes": ["ahi"], "gloss": "be", "upos_target": "AUX" },
-            { "token": "uh", "morphemes": ["uh"], "gloss": "PL", "upos_target": "PART" },
-            { "token": "hi", "morphemes": ["hi"], "gloss": "ASSERT", "upos_target": "PART" }
-          ],
-          "external_links": {
-            "ili_id": "",
-            "verbnet_class": ""
-          }
-        }
+      "parallel_sentences": [
+        { "zol": "Amaute pen ka innkuanpihte ahi uh hi.", "en": "They are my family members." }
       ]
     }
   ],

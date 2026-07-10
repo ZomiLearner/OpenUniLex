@@ -35,27 +35,10 @@
 				]
 			},
 			"contextual_requirements": null,
-			"examples": [
+			"parallel_sentences": [
 				{
-					"surface_text": "Amahpa pai hi.",
-					"english_translation": "He goes.",
-					"gloss_alignment": [
-						{
-							"token": "Amahpa",
-							"gloss": "he",
-							"upos_target": "PRON"
-						},
-						{
-							"token": "pai",
-							"gloss": "go",
-							"upos_target": "VERB"
-						},
-						{
-							"token": "hi",
-							"gloss": "ASSERT",
-							"upos_target": "PART"
-						}
-					]
+					"zol": "Amahpa pai khin hi.",
+					"en": "He has gone."
 				}
 			]
 		},
@@ -75,27 +58,10 @@
 				]
 			},
 			"contextual_requirements": null,
-			"examples": [
+			"parallel_sentences": [
 				{
-					"surface_text": "Amahpa mu ing.",
-					"english_translation": "I see him.",
-					"gloss_alignment": [
-						{
-							"token": "Amahpa",
-							"gloss": "him",
-							"upos_target": "PRON"
-						},
-						{
-							"token": "mu",
-							"gloss": "see",
-							"upos_target": "VERB"
-						},
-						{
-							"token": "ing",
-							"gloss": "1SG",
-							"upos_target": "PRON"
-						}
-					]
+					"zol": "Amahpa mungei kei ing.",
+					"en": "I have not seen him."
 				}
 			]
 		}

@@ -48,35 +48,8 @@
           "note": "Often preceded by high-transitivity agreement/agreement-direction markers or person clitics like 'kong' within finite clausal frames."
         }
       },
-      "examples": [
-        {
-          "surface_text": "Kong it hi.",
-          "english_translation": "I love you.",
-          "gloss_alignment": [
-            {
-              "token": "Kong",
-              "morphemes": ["kong"],
-              "gloss": "1SG>2SG",
-              "upos_target": "PRON"
-            },
-            {
-              "token": "it",
-              "morphemes": ["it"],
-              "gloss": "love",
-              "upos_target": "VERB"
-            },
-            {
-              "token": "hi",
-              "morphemes": ["hi"],
-              "gloss": "ASSERT",
-              "upos_target": "PART"
-            }
-          ],
-          "external_links": {
-            "ili_id": "i30973",
-            "verbnet_class": "love-31.1"
-          }
-        }
+      "parallel_sentences": [
+        { "zol": "Kong it hi.", "en": "I love you." }
       ]
     }
   ],

@@ -42,29 +42,8 @@
           "note": "Typically selects for the primary root/Stem I forms of action verbs."
         }
       },
-      "examples": [
-        {
-          "surface_text": "Pai in!",
-          "english_translation": "Go!",
-          "gloss_alignment": [
-            {
-              "token": "Pai",
-              "morphemes": ["pai"],
-              "gloss": "go.StemI",
-              "upos_target": "VERB"
-            },
-            {
-              "token": "in",
-              "morphemes": ["in"],
-              "gloss": "IMP",
-              "upos_target": "PART"
-            }
-          ],
-          "external_links": {
-            "ili_id": "",
-            "verbnet_class": ""
-          }
-        }
+      "parallel_sentences": [
+        { "zol": "Pai in!", "en": "Go!" }
       ]
     }
   ],

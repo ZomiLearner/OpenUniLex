@@ -36,26 +36,8 @@
           "note": "Accepts phrases or clauses forming the subsequent conjunct."
         }
       },
-      "examples": [
-        {
-          "surface_text": "Amaute in buhsih leh aksa a ne uh hi.",
-          "english_translation": "They ate sticky rice and chicken.",
-          "gloss_alignment": [
-            { "token": "Amaute", "morphemes": ["ama", "-ute"], "gloss": "they", "upos_target": "PRON" },
-            { "token": "in", "morphemes": ["in"], "gloss": "ERG", "upos_target": "ADP" },
-            { "token": "buhsih", "morphemes": ["buhsih"], "gloss": "sticky_rice", "upos_target": "NOUN" },
-            { "token": "leh", "morphemes": ["leh"], "gloss": "and", "upos_target": "CCONJ" },
-            { "token": "aksa", "morphemes": ["aksa"], "gloss": "chicken", "upos_target": "NOUN" },
-            { "token": "a", "morphemes": ["a"], "gloss": "3.AGR", "upos_target": "PRON" },
-            { "token": "ne", "morphemes": ["ne"], "gloss": "eat.StemI", "upos_target": "VERB" },
-            { "token": "uh", "morphemes": ["uh"], "gloss": "PL", "upos_target": "PART" },
-            { "token": "hi", "morphemes": ["hi"], "gloss": "ASSERT", "upos_target": "PART" }
-          ],
-          "external_links": {
-            "ili_id": "",
-            "verbnet_class": ""
-          }
-        }
+      "parallel_sentences": [
+        { "zol": "Amaute in buhsih leh aksa a ne uh hi.", "en": "They ate sticky rice and chicken." }
       ]
     }
   ],

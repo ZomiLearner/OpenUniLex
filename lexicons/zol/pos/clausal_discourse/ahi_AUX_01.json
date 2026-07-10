@@ -34,37 +34,9 @@
           "note": "Typically followed clause-finally by final assertion particles like 'hi' or interrogative particles like 'hiam'."
         }
       },
-      "examples": [
-        {
-          "surface_text": "Amah kua ahi hiam?",
-          "english_translation": "Who is he/she?",
-          "gloss_alignment": [
-            { "token": "Amah", "morphemes": ["amah"], "gloss": "he/she", "upos_target": "PRON" },
-            { "token": "kua", "morphemes": ["kua"], "gloss": "who", "upos_target": "PRON" },
-            { "token": "ahi", "morphemes": ["ahi"], "gloss": "be", "upos_target": "AUX" },
-            { "token": "hiam", "morphemes": ["hiam"], "gloss": "Q", "upos_target": "PART" }
-          ],
-          "external_links": {
-            "ili_id": "",
-            "verbnet_class": ""
-          }
-        },
-        {
-          "surface_text": "Hih pen ka laibu ahi hi.",
-          "english_translation": "This is my book.",
-          "gloss_alignment": [
-            { "token": "Hih", "morphemes": ["hih"], "gloss": "this", "upos_target": "DET" },
-            { "token": "pen", "morphemes": ["pen"], "gloss": "TOP", "upos_target": "PART" },
-            { "token": "ka", "morphemes": ["ka"], "gloss": "1SG.POSS", "upos_target": "PRON" },
-            { "token": "laibu", "morphemes": ["laibu"], "gloss": "book", "upos_target": "NOUN" },
-            { "token": "ahi", "morphemes": ["ahi"], "gloss": "be", "upos_target": "AUX" },
-            { "token": "hi", "morphemes": ["hi"], "gloss": "ASSERT", "upos_target": "PART" }
-          ],
-          "external_links": {
-            "ili_id": "",
-            "verbnet_class": ""
-          }
-        }
+      "parallel_sentences": [
+        {"zol": "Amah kua ahi hiam.", "en": "Who is he/she?"},
+        {"zol": "Hih pen ka laibu ahi hi.", "en": "This is my book."}
       ]
     }
   ],

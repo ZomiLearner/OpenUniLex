@@ -40,57 +40,8 @@
                     "note": "Requires the presence of an object or an inherently transitive verbal construction."
                 }
             },
-            "examples": [
-                {
-                    "surface_text": "Amah in an ne hi.",
-                    "english_translation": "He/She ate food.",
-                    "gloss_alignment": [
-                        {
-                            "token": "Amah",
-                            "morphemes": [
-                                "amah"
-                            ],
-                            "gloss": "he/she",
-                            "upos_target": "PRON"
-                        },
-                        {
-                            "token": "in",
-                            "morphemes": [
-                                "in"
-                            ],
-                            "gloss": "ERG",
-                            "upos_target": "ADP"
-                        },
-                        {
-                            "token": "an",
-                            "morphemes": [
-                                "an"
-                            ],
-                            "gloss": "food",
-                            "upos_target": "NOUN"
-                        },
-                        {
-                            "token": "ne",
-                            "morphemes": [
-                                "ne"
-                            ],
-                            "gloss": "eat.StemI",
-                            "upos_target": "VERB"
-                        },
-                        {
-                            "token": "hi",
-                            "morphemes": [
-                                "hi"
-                            ],
-                            "gloss": "ASSERT",
-                            "upos_target": "PART"
-                        }
-                    ],
-                    "external_links": {
-                        "ili_id": "",
-                        "verbnet_class": ""
-                    }
-                }
+            "parallel_sentences": [
+                { "zol": "Amah in an ne hi.", "en": "He/She ate food." }
             ]
         },
         {
@@ -114,50 +65,8 @@
                     "note": "Typically selects for an inanimate noun phrase acting as a tool or means."
                 }
             },
-            "examples": [
-                {
-                    "surface_text": "Temta in at in.",
-                    "english_translation": "Cut it with a knife.",
-                    "gloss_alignment": [
-                        {
-                            "token": "Temta",
-                            "morphemes": [
-                                "tem",
-                                "ta"
-                            ],
-                            "gloss": "knife",
-                            "upos_target": "NOUN"
-                        },
-                        {
-                            "token": "in",
-                            "morphemes": [
-                                "in"
-                            ],
-                            "gloss": "INS",
-                            "upos_target": "ADP"
-                        },
-                        {
-                            "token": "at",
-                            "morphemes": [
-                                "at"
-                            ],
-                            "gloss": "cut.StemI",
-                            "upos_target": "VERB"
-                        },
-                        {
-                            "token": "in",
-                            "morphemes": [
-                                "in"
-                            ],
-                            "gloss": "IMP",
-                            "upos_target": "PART"
-                        }
-                    ],
-                    "external_links": {
-                        "ili_id": "",
-                        "verbnet_class": ""
-                    }
-                }
+            "parallel_sentences": [
+                { "zol": "Temta in at in.", "en": "Cut it with a knife." }
             ]
         }
     ],

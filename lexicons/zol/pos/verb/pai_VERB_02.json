@@ -48,41 +48,8 @@
           "note": "Followed by negative imperative auxiliary or particle configurations like 'kei' + 'in' in prohibitive expressions."
         }
       },
-      "examples": [
-        {
-          "surface_text": "An pai kei in!",
-          "english_translation": "Do not throw food!",
-          "gloss_alignment": [
-            {
-              "token": "An",
-              "morphemes": ["an"],
-              "gloss": "food",
-              "upos_target": "NOUN"
-            },
-            {
-              "token": "pai",
-              "morphemes": ["pai"],
-              "gloss": "throw.StemI",
-              "upos_target": "VERB"
-            },
-            {
-              "token": "kei",
-              "morphemes": ["kei"],
-              "gloss": "NEG",
-              "upos_target": "PART"
-            },
-            {
-              "token": "in",
-              "morphemes": ["in"],
-              "gloss": "IMP",
-              "upos_target": "PART"
-            }
-          ],
-          "external_links": {
-            "ili_id": "i27614",
-            "verbnet_class": "throw-17.1"
-          }
-        }
+      "parallel_sentences": [
+        { "zol": "An pai kei in!", "en": "Do not throw food!" }
       ]
     }
   ],

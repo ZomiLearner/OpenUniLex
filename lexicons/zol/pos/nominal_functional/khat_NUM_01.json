@@ -36,23 +36,8 @@
           "note": "Attaches to the right edge of a noun phrase head (e.g., 'laibu khat' = one book)."
         }
       },
-      "examples": [
-        {
-          "surface_text": "Ken laibu khat ka nei hi.",
-          "english_translation": "I have one book.",
-          "gloss_alignment": [
-            { "token": "Ken", "morphemes": ["ke", "-in"], "gloss": "1SG.ERG", "upos_target": "PRON" },
-            { "token": "laibu", "morphemes": ["laibu"], "gloss": "book", "upos_target": "NOUN" },
-            { "token": "khat", "morphemes": ["khat"], "gloss": "one", "upos_target": "NUM" },
-            { "token": "ka", "morphemes": ["ka"], "gloss": "1SG.AGR", "upos_target": "PRON" },
-            { "token": "nei", "morphemes": ["nei"], "gloss": "have", "upos_target": "VERB" },
-            { "token": "hi", "morphemes": ["hi"], "gloss": "ASSERT", "upos_target": "PART" }
-          ],
-          "external_links": {
-            "ili_id": "",
-            "verbnet_class": ""
-          }
-        }
+      "parallel_sentences": [
+        { "zol": "Ken laibu khat ka nei hi.", "en": "I have one book." }
       ]
     }
   ],

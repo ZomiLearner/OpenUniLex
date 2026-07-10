@@ -39,27 +39,10 @@
         ]
       },
       "contextual_requirements": null,
-      "examples": [
+      "parallel_sentences": [
         {
-          "surface_text": "Itna thupi hi.",
-          "english_translation": "Love is great.",
-          "gloss_alignment": [
-            {
-              "token": "Itna",
-              "gloss": "love",
-              "upos_target": "NOUN"
-            },
-            {
-              "token": "thupi",
-              "gloss": "great",
-              "upos_target": "ADJ"
-            },
-            {
-              "token": "hi",
-              "gloss": "ASSERT",
-              "upos_target": "PART"
-            }
-          ]
+          "zol": "Itna pen a thupi pen ahi hi.",
+          "en": "Love is the greatest."
         }
       ]
     }

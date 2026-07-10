@@ -39,41 +39,8 @@
           "note": "Follows the head noun phrase it modifies within the nominal projection."
         }
       },
-      "examples": [
-        {
-          "surface_text": "Khuahun hoih hi.",
-          "english_translation": "The weather is good.",
-          "gloss_alignment": [
-            {
-              "token": "Khuahun",
-              "morphemes": [
-                "khuahun"
-              ],
-              "gloss": "weather",
-              "upos_target": "NOUN"
-            },
-            {
-              "token": "hoih",
-              "morphemes": [
-                "hoih"
-              ],
-              "gloss": "good",
-              "upos_target": "ADJ"
-            },
-            {
-              "token": "hi",
-              "morphemes": [
-                "hi"
-              ],
-              "gloss": "ASSERT",
-              "upos_target": "PART"
-            }
-          ],
-          "external_links": {
-            "ili_id": "i26123",
-            "verbnet_class": ""
-          }
-        }
+      "parallel_sentences": [
+        { "zol": "Khuahun hoih hi.", "en": "The weather is good." }
       ]
     }
   ],

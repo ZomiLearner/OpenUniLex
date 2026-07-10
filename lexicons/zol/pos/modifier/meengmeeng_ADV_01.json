@@ -39,42 +39,8 @@
 					"note": "Follows the head verb phrase it modifies in imperative or dynamic active clauses."
 				}
 			},
-			"examples": [
-				{
-					"surface_text": "Pai meengmeeng in.",
-					"english_translation": "Go quickly.",
-					"gloss_alignment": [
-						{
-							"token": "Pai",
-							"morphemes": [
-								"pai"
-							],
-							"gloss": "Go",
-							"upos_target": "VERB"
-						},
-						{
-							"token": "meengmeeng",
-							"morphemes": [
-								"meeng",
-								"meeng"
-							],
-							"gloss": "quickly",
-							"upos_target": "ADV"
-						},
-						{
-							"token": "in",
-							"morphemes": [
-								"in"
-							],
-							"gloss": "IMP",
-							"upos_target": "PART"
-						}
-					],
-					"external_links": {
-						"ili_id": "i26917",
-						"verbnet_class": ""
-					}
-				}
+			"parallel_sentences": [
+				{ "zol": "Pai meengmeeng in.", "en": "Go quickly." }
 			]
 		}
 	],

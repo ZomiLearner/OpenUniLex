@@ -30,7 +30,9 @@
           "note": "Attaches directly to the immediately preceding token without typographic whitespace."
         }
       },
-      "examples": []
+      "parallel_sentences": [
+        { "zol": "Hong hawh in la, vaak khawm ni!", "en": "Come over[here], and we will go out together!" }
+      ]
     }
   ],
   "pos_payload": {

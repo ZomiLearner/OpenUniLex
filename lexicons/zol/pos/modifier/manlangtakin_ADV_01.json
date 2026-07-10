@@ -34,50 +34,8 @@
           "note": "Precedes the head verb phrase it modifies, frequently co-occurring with directional or aspectual markers."
         }
       },
-      "examples": [
-        {
-          "surface_text": "Manlangtakin hong pai in.",
-          "english_translation": "Come quickly.",
-          "gloss_alignment": [
-            {
-              "token": "Manlangtakin",
-              "morphemes": [
-                "manlang",
-                "-takin"
-              ],
-              "gloss": "quickly",
-              "upos_target": "ADV"
-            },
-            {
-              "token": "hong",
-              "morphemes": [
-                "hong"
-              ],
-              "gloss": "1/2.OBJ_DIR",
-              "upos_target": "PRON"
-            },
-            {
-              "token": "pai",
-              "morphemes": [
-                "pai"
-              ],
-              "gloss": "come.StemI",
-              "upos_target": "VERB"
-            },
-            {
-              "token": "in",
-              "morphemes": [
-                "in"
-              ],
-              "gloss": "IMP",
-              "upos_target": "PART"
-            }
-          ],
-          "external_links": {
-            "ili_id": "",
-            "verbnet_class": ""
-          }
-        }
+      "parallel_sentences": [
+        { "zol": "Manlangtakin hong pai in.", "en": "Come quickly." }
       ]
     }
   ],
